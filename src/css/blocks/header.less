@@ -1,0 +1,45 @@
+.header {
+	padding-top: 41px;
+	padding-bottom: 20px;
+
+	&__container {
+		//max-width: 1080px;
+		//margin-left: auto;
+		//margin-right: auto;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__nav {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	&__nav-item {
+		color: #353535;
+		font-size: @16;
+		.medium();
+		text-decoration: none;
+		margin-right: 20px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__login {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		text-decoration: none;
+	}
+	&__login-icon {
+		.svg-icon(icon-login, 10px, 14px);
+		margin-right: 11px;
+	}
+	&__login-text {
+		font-size: @16;
+		color: white;
+		.medium();
+		text-decoration: none;
+	}
+}

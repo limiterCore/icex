@@ -16,10 +16,16 @@
 <body>
 
 <div class="all-wrap">
+	{% block header %}
+		{% include 'parts/header.twig' %}
+	{% endblock %}
 
 	{% block content %}
 	{% endblock %}
 
+	{% block footer %}
+		{% include 'parts/footer.twig' %}
+	{% endblock %}
 </div>
 
 <!-- uncache -->
