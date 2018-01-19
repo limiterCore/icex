@@ -67,3 +67,68 @@
 		.light();
 	}
 }
+
+@media screen and (max-width: 1000px) {
+	.footer {
+
+		&__terms-block {
+			margin-right: 30px;
+		}
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.footer {
+		&__container {
+			flex-direction: column;
+		}
+		&__left-part {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.footer {
+		padding-top: 29px;
+		padding-bottom: 24px;
+
+		&__container {
+			align-items: flex-start;
+		}
+		&__left-part {
+			flex-direction: column;
+			align-items: flex-start;
+			margin-bottom: 14px;
+		}
+		&__terms-block {
+			margin-bottom: 15px;
+			margin-right: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 370px) {
+	.footer {
+
+		&__terms {
+			font-size: @12;
+			&:after {
+				width: 1px;
+				height: 11px;
+			}
+		}
+		&__privacy-policy {
+			font-size: @12;
+		}
+		&__mail-text {
+			font-size: @12;
+		}
+		&__mail-itself {
+			font-size: @12;
+		}
+		&__your-ads-media {
+			font-size: @12;
+		}
+	}
+}
