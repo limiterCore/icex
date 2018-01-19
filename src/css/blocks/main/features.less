@@ -88,3 +88,58 @@
 		background: #323232;
 	}
 }
+
+@media screen and (max-width: 650px) {
+	.features {
+		padding-top: 27px;
+		padding-bottom: 17px;
+
+		&__container {
+			padding-left: 26px;
+			padding-right: 26px;
+		}
+
+		&__slider-wrap {
+			margin-bottom: 22px;
+		}
+
+		&__slider-item-icon {
+			margin-bottom: 28px;
+
+			&_marketing {
+				.svg-icon(icon-features-1, 120px, 120px);
+			}
+			&_online-interface {
+				.svg-icon(icon-features-2, 120px, 120px);
+			}
+			&_management-interface {
+				.svg-icon(icon-features-3, 120px, 120px);
+			}
+			&_cryptocurrency {
+				.svg-icon(icon-features-4, 120px, 120px);
+			}
+		}
+		&__slider-item-title {
+			font-size: @16;
+		}
+		&__slider-item-divider {
+			margin-bottom: 29px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 20px;
+			height: 2px;
+			background: #00CAB5;
+		}
+		&__slider-item-text {
+			font-size: @14;
+		}
+
+
+		.swiper-pagination-bullet {
+			width: 9px;
+			height: 9px;
+			min-width: 9px;
+			margin-right: 4px;
+		}
+	}
+}
