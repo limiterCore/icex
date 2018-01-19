@@ -24,11 +24,14 @@
 		.medium();
 		text-decoration: none;
 		margin-right: 20px;
+		transition: all .3s ease;
 		&:last-child {
 			margin-right: 0;
 		}
-		&:hover {
-			color: @turquoise-color;
+		.no-touchevents & {
+			&:hover {
+				color: @turquoise-color;
+			}
 		}
 	}
 	&__login {
@@ -40,8 +43,11 @@
 	&__login-icon {
 		.svg-icon(icon-login, 10px, 14px);
 		margin-right: 11px;
+		transition: all .3s ease;
 		.header__login:hover & {
-			.svg-icon(icon-login-active, 10px, 14px);
+			.no-touchevents & {
+				.svg-icon(icon-login-active, 10px, 14px);
+			}
 		}
 	}
 	&__login-text {
@@ -49,8 +55,11 @@
 		color: white;
 		.medium();
 		text-decoration: none;
+		transition: all .3s ease;
 		.header__login:hover & {
-			color: @turquoise-color;
+			.no-touchevents & {
+				color: @turquoise-color;
+			}
 		}
 	}
 
