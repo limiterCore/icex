@@ -27,6 +27,9 @@
 		&:last-child {
 			margin-right: 0;
 		}
+		&:hover {
+			color: #3f9384;
+		}
 	}
 	&__login {
 		display: flex;
@@ -50,6 +53,7 @@
 		height: 18px;
 		position: relative;
 		z-index: 40;
+		display: none;
 		&_active {
 			width: 28px;
 		}
@@ -90,10 +94,10 @@
 	}
 
 	&__nav-logo-wrap {
-		display: flex;
 		justify-content: center;
 		margin-top: 12px;
 		margin-bottom: 40px;
+		display: none;
 	}
 
 	&__nav-logo {
@@ -107,6 +111,10 @@
 		padding-bottom: 20px;
 		position: relative;
 		z-index: 20;
+
+		&__burger {
+			display: block;
+		}
 
 		&__nav {
 			position: absolute;
@@ -131,6 +139,10 @@
 		}
 		&__login-text {
 			display: none;
+		}
+
+		&__nav-logo-wrap {
+			display: flex;
 		}
 	}
 }
