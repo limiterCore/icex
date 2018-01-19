@@ -28,7 +28,7 @@
 			margin-right: 0;
 		}
 		&:hover {
-			color: #3f9384;
+			color: @turquoise-color;
 		}
 	}
 	&__login {
@@ -40,12 +40,18 @@
 	&__login-icon {
 		.svg-icon(icon-login, 10px, 14px);
 		margin-right: 11px;
+		.header__login:hover & {
+			.svg-icon(icon-login-active, 10px, 14px);
+		}
 	}
 	&__login-text {
 		font-size: @16;
 		color: white;
 		.medium();
 		text-decoration: none;
+		.header__login:hover & {
+			color: @turquoise-color;
+		}
 	}
 
 	&__burger {
