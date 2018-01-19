@@ -15,11 +15,17 @@
 			el: '.features__pagination',
 			type: 'bullets',
 		},
-		// breakpoints: {
-		// 	700: {
-		// 		autoHeight: true
-		// 	},
-		// },
+		breakpoints: {
+			1300: {
+				slidesPerView: 3,
+			},
+			1000: {
+				slidesPerView: 2,
+			},
+			700: {
+				slidesPerView: 1,
+			},
+		},
 	})
 })(jQuery);
 
