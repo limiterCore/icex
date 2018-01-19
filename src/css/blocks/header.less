@@ -24,8 +24,14 @@
 		.medium();
 		text-decoration: none;
 		margin-right: 20px;
+		transition: all .3s ease;
 		&:last-child {
 			margin-right: 0;
+		}
+		.no-touchevents & {
+			&:hover {
+				color: @turquoise-color;
+			}
 		}
 	}
 	&__login {
@@ -37,12 +43,24 @@
 	&__login-icon {
 		.svg-icon(icon-login, 10px, 14px);
 		margin-right: 11px;
+		transition: all .3s ease;
+		.header__login:hover & {
+			.no-touchevents & {
+				.svg-icon(icon-login-active, 10px, 14px);
+			}
+		}
 	}
 	&__login-text {
 		font-size: @16;
 		color: white;
 		.medium();
 		text-decoration: none;
+		transition: all .3s ease;
+		.header__login:hover & {
+			.no-touchevents & {
+				color: @turquoise-color;
+			}
+		}
 	}
 
 	&__burger {
@@ -50,6 +68,7 @@
 		height: 18px;
 		position: relative;
 		z-index: 40;
+		display: none;
 		&_active {
 			width: 28px;
 		}
@@ -90,10 +109,10 @@
 	}
 
 	&__nav-logo-wrap {
-		display: flex;
 		justify-content: center;
 		margin-top: 12px;
 		margin-bottom: 40px;
+		display: none;
 	}
 
 	&__nav-logo {
@@ -107,6 +126,10 @@
 		padding-bottom: 20px;
 		position: relative;
 		z-index: 20;
+
+		&__burger {
+			display: block;
+		}
 
 		&__nav {
 			position: absolute;
@@ -131,6 +154,10 @@
 		}
 		&__login-text {
 			display: none;
+		}
+
+		&__nav-logo-wrap {
+			display: flex;
 		}
 	}
 }

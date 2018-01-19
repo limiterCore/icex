@@ -4,4 +4,5 @@ $(document).ready(function() {
 	//= parts/01.sliders.js
 	//= parts/02.mobile-menu.js
 	//= parts/03.animate-details.js
+	//= parts/04.smooth-scroll.js
 });

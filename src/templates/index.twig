@@ -8,16 +8,24 @@
 {% block content %}
 	{#TOP BLOCK#}
 	<div class="top-block">
-		<div class="top-block__inner" style="background-image: url(img/top-block-img.jpg)">
-			<div class="top-block__container container">
-
+		<div class="top-block__bg" style="background-image: url(img/top-block-img.jpg)">
+		</div>
+		<div class="top-block__container container">
+			<div class="top-block__logo">
+				<img src="img/logo.svg" alt="ICEX" class="top-block__logo-img">
 			</div>
+			<div class="top-block__description">
+				A new ambitious project that connects advertisers and publishers worldwide. The same approach
+				to every client, quality control, advertising and traffic. Ideal for both professionals and novices
+				advertising.
+			</div>
+			<button type="button" class="top-block__get-started js-smooth-scroll" data-href="#screen_2">Get started</button>
 		</div>
 	</div>
 	{#/TOP BLOCK#}
 
 	{#TEXT BLOCK#}
-	<div class="text-block">
+	<div class="text-block" id="screen_2">
 		<div class="text-block__container small-container">
 			<h2 class="text-block__title">FORM OF SUCCESS - THE LOGIC OF GROWS</h2>
 			<div class="text-block__divider"></div>
