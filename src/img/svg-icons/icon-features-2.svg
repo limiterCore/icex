@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 19.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Слой_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 176.60001 176.60001"
+   xml:space="preserve"
+   sodipodi:docname="Icon 2.svg"
+   width="176.60001"
+   height="176.60001"
+   inkscape:version="0.92.2 (unknown)"><metadata
+     id="metadata3956"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs3954" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1323"
+     inkscape:window-height="744"
+     id="namedview3952"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1.0776256"
+     inkscape:cx="88.25"
+     inkscape:cy="88.3"
+     inkscape:window-x="43"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Слой_1" /><style
+     type="text/css"
+     id="style3930">
+	.st0{fill:#00C9B3;}
+	.st1{opacity:0.2;fill:url(#Тень_2_);}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:5;stroke-miterlimit:10;}
+	.st3{fill:#FFFFFF;}
+</style><g
+     id="Иконка_2"
+     transform="translate(-39,-21.2)"><path
+       id="Фон_4_"
+       class="st0"
+       d="m 215.6,109.5 c 0,12.9 -2.8,25.3 -7.8,36.3 v 0 c -8.7,19.1 -23.9,34.7 -42.9,43.6 -11.4,5.4 -24.1,8.4 -37.6,8.4 -48.8,0 -88.3,-39.6 -88.3,-88.3 0,-48.8 39.5,-88.3 88.3,-88.3 48.7,0 88.3,39.5 88.3,88.3 z"
+       inkscape:connector-curvature="0"
+       style="fill:#00c9b3" /><linearGradient
+       id="Тень_2_"
+       gradientUnits="userSpaceOnUse"
+       x1="195.2872"
+       y1="166.35741"
+       x2="99.769997"
+       y2="99.475502"><stop
+         offset="0.3"
+         style="stop-color:#FFFFFF"
+         id="stop3933" /><stop
+         offset="1"
+         style="stop-color:#000000"
+         id="stop3935" /></linearGradient><path
+       id="Тень_1_"
+       class="st1"
+       d="m 207.8,145.8 v 0 c -8.7,19.2 -23.9,34.7 -42.9,43.6 -23.1,-23.1 -46.2,-46.3 -69.3,-69.4 0.3,-0.4 1.3,-2 0.8,-2.6 0,0 0,-0.1 -0.1,-0.1 l -0.1,-0.1 c -1.4,-1.5 -2.3,-3.3 -2.5,-5.3 -0.6,-5.4 4,-8.9 4.4,-9.2 1.9,-1.4 3.9,-1.8 5.4,-2 1,-0.2 2.4,-0.4 3.8,-0.3 -0.3,-0.1 -0.6,-0.2 -0.8,-0.4 -1.2,-1.3 -0.2,-4.9 1.7,-7.3 3.4,-4.3 9.5,-4.8 11.7,-4.9 0.9,-0.1 1.5,-0.1 2.5,0 1.8,0.1 6.6,5 10.1,4.7 0.6,-0.1 1.5,-0.3 2.5,-1.1 4.4,4.8 8.9,9.6 13.3,14.4 -0.1,-0.2 -0.1,-0.5 -0.1,-0.7 0,-0.7 0.3,-1.3 0.8,-1.8 1,-1 2.6,-1 3.6,0 0,0 0.1,0.1 0.1,0.2 l 6.5,6.5 c -0.5,-4 -2.2,-7.7 -5.1,-10.6 -1,-1 -1,-2.6 0,-3.6 1,-1 2.6,-1 3.6,0 0.3,0.3 0.5,0.5 0.7,0.8 v 0 z"
+       inkscape:connector-curvature="0"
+       style="opacity:0.2" /><g
+       id="Иконка_1_"><g
+         id="g3941"><path
+           class="st2"
+           d="m 135.8,109.1 c -0.1,-0.1 1.1,-2.8 1.3,-6.2 0.2,-3.1 -1.2,-5.6 -1.9,-6.9 -2.6,-4.7 -7.6,-7.9 -12.8,-8.3 -0.9,-0.1 -1.6,0 -2.5,0 -2.3,0.2 -8.4,0.6 -11.7,4.9 -1.9,2.4 -2.9,6.1 -1.7,7.3 0.7,0.8 1.9,0.3 3.8,1.5 1.2,0.8 1.9,1.8 1.9,1.8 0,0 -0.7,-1.1 -1.9,-1.9 -2.2,-1.5 -5,-1 -6.7,-0.7 -1.5,0.3 -3.4,0.6 -5.4,2 -0.4,0.3 -5,3.8 -4.4,9.2 0.5,4.1 3.7,7.5 8.1,8.5 12.4,0 24.8,0 37.1,0 0.7,-0.2 3.8,-1.2 5.3,-4.3 1.7,-3.4 0.8,-7.6 -1.9,-10.1 -2,-1.9 -4.3,-2.2 -5.3,-2.3 0,0.7 -0.1,1.6 -0.3,2.6 -0.3,1.6 -0.9,3 -1,2.9 z M 139,103"
+           id="path3939"
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:#ffffff;stroke-width:5;stroke-miterlimit:10" /></g><g
+         id="g3947"><path
+           class="st3"
+           d="m 148.9,103.3 c -0.5,0.5 -0.8,1.2 -0.8,1.8 0,0.7 0.3,1.3 0.8,1.8 3.3,3.3 3.3,8.6 0,11.9 -1,1 -1,2.6 0,3.6 1,1 2.6,1 3.6,0 5.3,-5.3 5.3,-13.9 0,-19.1 -1,-1 -2.6,-1 -3.6,0 z"
+           id="path3943"
+           inkscape:connector-curvature="0"
+           style="fill:#ffffff" /><path
+           class="st3"
+           d="m 154,124.5 c -0.5,0.5 -0.8,1.2 -0.8,1.8 0,0.7 0.3,1.3 0.8,1.8 1,1 2.6,1 3.6,0 4.3,-4.3 6.7,-10.1 6.7,-16.3 0,-6.1 -2.4,-11.9 -6.7,-16.3 -1,-1 -2.6,-1 -3.6,0 -1,1 -1,2.6 0,3.6 3.4,3.4 5.2,7.9 5.2,12.6 0,5 -1.8,9.5 -5.2,12.8 z"
+           id="path3945"
+           inkscape:connector-curvature="0"
+           style="fill:#ffffff" /></g></g></g></svg>
