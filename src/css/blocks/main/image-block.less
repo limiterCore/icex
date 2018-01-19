@@ -1,0 +1,48 @@
+.image-block {
+	padding-top: 70px;
+	padding-bottom: 73px;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.4);
+		z-index: 10;
+	}
+
+	&__container {
+		position: relative;
+		z-index: 20;
+	}
+
+	&__content {
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&__title {
+		font-size: @26;
+		.semi-bold();
+		line-height: 1.04;
+		letter-spacing: 2.6px;
+		text-align: center;
+		color: #ffffff;
+		text-transform: uppercase;
+		margin-bottom: 26px;
+	}
+	&__subtitle {
+		font-size: @22;
+		.semi-bold();
+		line-height: 1.23;
+		letter-spacing: 1.8px;
+		text-align: center;
+		color: #ffffff;
+	}
+}
