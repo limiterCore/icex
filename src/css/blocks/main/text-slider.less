@@ -1,6 +1,7 @@
 .text-slider {
 	display: flex;
 	padding-bottom: 40px;
+	overflow: hidden;
 
 	&__image-part {
 		width: 50%;
@@ -10,12 +11,11 @@
 
 	}
 	&__image-inner {
-		width: calc(~"100% + 185px");
+		width: 100%;
 		height: 100%;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
-		margin-right: -185px;
 	}
 	&__text-part {
 		width: 50%;
@@ -23,8 +23,8 @@
 		padding-top: 131px;
 		padding-bottom: 80px;
 		position: relative;
-		z-index: 20;
-		background: white;
+		//z-index: 20;
+		//background: white;
 	}
 	&__container {
 		max-width: 1282px / 2;
@@ -103,7 +103,7 @@
 	.text-slider {
 		flex-direction: column;
 		margin-bottom: 20px;
-		overflow: hidden;
+
 
 		&__image-part {
 			width: 100%;
@@ -131,6 +131,19 @@
 	}
 }
 
+@media screen and (max-width: 650px) {
+	.text-slider {
+
+		&__slider-item-text-p {
+			font-size: @14;
+		}
+		&__slider-item-divider {
+			.svg-icon(icon-divider, 151px, 8px);
+			margin-bottom: 11px;
+		}
+	}
+}
+
 @media screen and (max-width: 380px) {
 	.text-slider {
 		margin-bottom: 16px;
@@ -145,13 +158,6 @@
 		&__text-part {
 			padding-top: 26px;
 			padding-bottom: 0;
-		}
-		&__slider-item-text-p {
-			font-size: @14;
-		}
-		&__slider-item-divider {
-			.svg-icon(icon-divider, 151px, 8px);
-			margin-bottom: 11px;
 		}
 		.swiper-pagination-bullet {
 			width: 9px;
