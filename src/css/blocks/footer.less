@@ -34,6 +34,11 @@
 			top: 0;
 			right: -11px;
 		}
+		.no-touchevents & {
+			&:hover {
+				color: #00CAB5;
+			}
+		}
 	}
 	&__privacy-policy {
 		color: #c9cbca;
@@ -41,6 +46,11 @@
 		.light();
 		text-decoration: none;
 		transition: all .3s ease;
+		.no-touchevents & {
+			&:hover {
+				color: #00CAB5;
+			}
+		}
 	}
 	&__mail-block {
 		display: flex;
@@ -57,6 +67,12 @@
 		.light();
 		font-size: @16;
 		text-decoration: none;
+		transition: all .3s ease;
+		.no-touchevents & {
+			&:hover {
+				color: #00CAB5;
+			}
+		}
 	}
 	&__right-part {
 

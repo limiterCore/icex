@@ -60,6 +60,14 @@
 		justify-content: center;
 		.medium();
 		font-size: @16;
+		transition: all .3s ease;
+		.no-touchevents & {
+			&:hover {
+				border-color: #00CAB5;
+				color: #00CAB5;
+				filter: drop-shadow(0 0 4px #00CAB5);
+			}
+		}
 	}
 }
 
