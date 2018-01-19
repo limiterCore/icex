@@ -14,6 +14,7 @@
 		pagination: {
 			el: '.features__pagination',
 			type: 'bullets',
+			clickable: true,
 		},
 		breakpoints: {
 			1300: {
@@ -40,12 +41,9 @@
 		pagination: {
 			el: '.text-slider__slider-pagination',
 			type: 'bullets',
+			clickable: true,
 		},
-		// breakpoints: {
-		// 	700: {
-		// 		autoHeight: true
-		// 	},
-		// },
+
 	})
 })(jQuery);
 
