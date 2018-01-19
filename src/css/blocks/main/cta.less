@@ -2,7 +2,8 @@
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 411px;
+	padding-top: 143px;
+	padding-bottom: 143px;
 	position: relative;
 
 	display: flex;
@@ -59,5 +60,31 @@
 		justify-content: center;
 		.medium();
 		font-size: @16;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.cta {
+		padding-top: 81px;
+		padding-bottom: 22px;
+
+		&__title {
+			font-size: @14;
+			margin-bottom: 69px;
+			line-height: 1.43;
+			letter-spacing: 0.7px;
+		}
+		&__link-wrap {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		&__link {
+			height: 45px;
+			border-radius: 10px;
+			padding: 0 31px;
+			letter-spacing: 0.7px;
+			font-size: @12;
+		}
 	}
 }
