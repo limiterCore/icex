@@ -6,6 +6,10 @@
 		&:last-child {
 			margin-bottom: 0;
 		}
+		&_checkbox {
+			margin-bottom: 26px;
+			justify-content: flex-end;
+		}
 		&_submit {
 			justify-content: flex-end;
 		}
@@ -138,6 +142,29 @@
 			&:hover {
 				background: @turquoise-color;
 				filter: drop-shadow(0 0 4px @turquoise-color);
+			}
+		}
+	}
+
+	&__checkbox-holder {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	&__checkbox-text {
+		color: white;
+		font-size: @16;
+		.regular();
+	}
+	&__checkbox-link {
+		color: #00c9b3;
+		font-size: @16;
+		.regular();
+		text-decoration: none;
+		.no-touchevents & {
+			&:hover {
+				text-decoration: underline;
 			}
 		}
 	}
