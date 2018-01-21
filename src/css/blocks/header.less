@@ -14,11 +14,17 @@
 		align-items: center;
 		justify-content: space-between;
 	}
-	&__right-part {
+	&__left-part {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		width: 70%;
+	}
+	&__right-part {
+		width: 30%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
 	}
 	&__logo {
 		width: 162px;
@@ -136,9 +142,31 @@
 		margin-bottom: 40px;
 		display: none;
 	}
-
 	&__nav-logo {
 		.svg-icon(logo-mobile, 66px, 20px);
+	}
+
+	&__add-new {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		margin-right: 58px;
+	}
+	&__add-new-icon {
+		margin-right: 10px;
+		width: 14px;
+		height: 14px;
+		background: #00c9b3;
+	}
+	&__add-new-text {
+		color: #00c9b3;
+		font-size: @16;
+		.medium();
+		.header__add-new:hover & {
+			.no-touchevents & {
+				text-decoration: underline;
+			}
+		}
 	}
 }
 
