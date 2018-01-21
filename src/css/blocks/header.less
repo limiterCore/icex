@@ -3,15 +3,31 @@
 	padding-bottom: 20px;
 	position: relative;
 	z-index: 20;
+	&_grey {
+		background: #F3F5F8;
+		padding-top: 22px;
+		padding-bottom: 27px;
+	}
 
 	&__container {
-		//max-width: 1080px;
-		//margin-left: auto;
-		//margin-right: auto;
-
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+	}
+	&__right-part {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 70%;
+	}
+	&__logo {
+		width: 162px;
+		height: 50px;
+		text-decoration: none;
+	}
+	&__logo-img {
+		width: 100%;
+		height: 100%;
 	}
 	&__nav {
 		display: flex;
@@ -44,6 +60,9 @@
 		.svg-icon(icon-login, 10px, 14px);
 		margin-right: 11px;
 		transition: all .3s ease;
+		.header_grey & {
+			.svg-icon(icon-login-dark, 10px, 14px);
+		}
 		.header__login:hover & {
 			.no-touchevents & {
 				.svg-icon(icon-login-active, 10px, 14px);
@@ -56,6 +75,9 @@
 		.medium();
 		text-decoration: none;
 		transition: all .3s ease;
+		.header_grey & {
+			color: #353535;
+		}
 		.header__login:hover & {
 			.no-touchevents & {
 				color: @turquoise-color;
