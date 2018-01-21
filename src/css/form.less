@@ -1,20 +1,37 @@
 .form {
 	&__input-holder {
-		margin-bottom: 15px;
+		margin-bottom: 18px;
+		width: 100%;
+		&_select {
+			position: relative;
+			&:after {
+				position: absolute;
+				top: 28px;
+				right: 15px;
+				content: '';
+				border: 5px solid transparent;
+				border-top-color: white;
+				pointer-events: none;
+			}
+		}
 	}
 	&__input {
 		display: block;
 		width: 100%;
-		height: 35px;
-		background: #383542;
-		border-radius: 3px;
-		border: 1px solid transparent;
-		padding: 0 20px;
+		height: 61px;
+		background: #808286;
+		opacity: 0.7;
+		border: 1px solid #dadbdc;
+		padding: 22px;
 
 		color: white;
 		.regular();
-		font-size: @14;
+		font-size: @16;
 		-webkit-appearance: none;
+
+		&_select {
+
+		}
 		&::-webkit-input-placeholder {
 			color: white;
 			opacity: 1;
@@ -44,7 +61,7 @@
 		display: block;
 		width: 100%;
 		height: 225px;
-		background: #383542;
+		background-color: #808286;
 		border-radius: 3px;
 		border: 1px solid transparent;
 		padding: 10px 20px;

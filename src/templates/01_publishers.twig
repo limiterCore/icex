@@ -1,0 +1,137 @@
+
+{% extends 'parts/layout.twig' %}
+
+{% block title %}
+	<title>ICEX Media</title>
+{% endblock %}
+
+
+{% block content %}
+
+	{#PUBLISHERS#}
+	<div class="publishers">
+		<div class="publishers__bg" style="background-image: url(img/publish_bg.jpg)">
+			<div class="publishers__bg-darken">
+				<div class="publishers__inner container-publishers">
+				<div class="publishers__block">
+					<div class="publishers__title">Create a New Place</div>
+
+					{#FORM#}
+					<div class="publishers__form">
+						<form>
+							<div class="publishers__form-item">
+								<span class="publishers__form-text publishers__form-text_title">Title</span>
+								<div class="form__input-holder">
+									<input type="text" class="form__input">
+								</div>
+							</div>
+							<div class="publishers__form-item">
+								<span class="publishers__form-text" >Ad type</span>
+								<div class="form__input-holder form__input-holder_select">
+									<select class="form__input">
+										<option class="publishers__form-option">Banners Full Size 468x60</option>
+										<option class="publishers__form-option">Banners Full Size 468x60</option>
+										<option class="publishers__form-option">Banners Full Size 468x60</option>
+										<option class="publishers__form-option">Banners Full Size 468x60</option>
+									</select>
+								</div>
+							</div>
+							<div class="publishers__form-item">
+								<span class="publishers__form-text"></span>
+								<div class="form__input-holder">
+									<button type="submit" class="form__submit btn">
+										submit
+									</button>
+								</div>
+							</div>
+
+						</form>
+					</div>
+					{#/FORM#}
+
+				</div>
+				<div class="publishers__block">
+					<div class="publishers__title">Available Zones</div>
+
+					{#TABLE#}
+					<div class="publishers__table">
+						<div class="publishers__table-title">
+							<div class="publishers__th">Title</div>
+							<div class="publishers__th">Ad type</div>
+							<div class="publishers__th">Payout</div>
+						</div>
+						<div class="publishers__table-block">
+							<div class="publishers__table-block-inner">
+								<div class="publishers__table-row">
+									<p class="publishers__col publishers__col_1">Zone Banners 468x60 example</p>
+									<p class="publishers__col publishers__col_2">Banners Full Size 468x60</p>
+									<p class="publishers__col publishers__col_3">$0.60/10 clicks </p>
+									<p class="publishers__col publishers__col_4">$0.60/500 impressions</p>
+								</div>
+								<div class="publishers__table-row">
+									<p class="publishers__col publishers__col_1">Zone Banners 468x60 example</p>
+									<p class="publishers__col publishers__col_2">Banners Half Size 234x60</p>
+									<p class="publishers__col publishers__col_3">$0.60/10 clicks </p>
+									<p class="publishers__col publishers__col_4">$0.60/500 impressions</p>
+								</div>
+								<div class="publishers__table-row">
+									<p class="publishers__col publishers__col_1">Zone Banners 468x60 example</p>
+									<p class="publishers__col publishers__col_2">Banners Vertical 120x240</p>
+									<p class="publishers__col publishers__col_3">$0.60/10 clicks </p>
+									<p class="publishers__col publishers__col_4">$0.60/500 impressions</p>
+								</div>
+								<div class="publishers__table-row">
+									<p class="publishers__col publishers__col_1">Zone Banners 468x60 example</p>
+									<p class="publishers__col publishers__col_2">Banners Vertical Tower 160x600</p>
+									<p class="publishers__col publishers__col_3">$0.60/10 clicks </p>
+									<p class="publishers__col publishers__col_4">$0.60/500 impressions</p>
+								</div>
+								<div class="publishers__table-row">
+									<p class="publishers__col publishers__col_1">Zone Banners 468x60 example</p>
+									<p class="publishers__col publishers__col_2">Button 120x90</p>
+									<p class="publishers__col publishers__col_3">$0.60/10 clicks </p>
+									<p class="publishers__col publishers__col_4">$0.60/500 impressions</p>
+								</div>
+								<div class="publishers__table-row">
+									<p class="publishers__col publishers__col_1">Zone Banners 468x60 example</p>
+									<p class="publishers__col publishers__col_2">Button 88x31</p>
+									<p class="publishers__col publishers__col_3">$0.60/10 clicks </p>
+									<p class="publishers__col publishers__col_4">$0.60/500 impressions</p>
+								</div>
+								<div class="publishers__table-row">
+									<p class="publishers__col publishers__col_1">Zone Banners 468x60 example</p>
+									<p class="publishers__col publishers__col_2">Complete Page 800x600</p>
+									<p class="publishers__col publishers__col_3">$0.60/10 clicks </p>
+									<p class="publishers__col publishers__col_4">$0.60/500 impressions</p>
+								</div>
+								<div class="publishers__table-row">
+									<p class="publishers__col publishers__col_1">Zone Banners 468x60 example</p>
+									<p class="publishers__col publishers__col_2">Facebook style ads</p>
+									<p class="publishers__col publishers__col_3">$0.60/10 clicks </p>
+									<p class="publishers__col publishers__col_4">$0.60/500 impressions</p>
+								</div>
+								<div class="publishers__table-row">
+									<p class="publishers__col publishers__col_1">Zone Banners 468x60 example</p>
+									<p class="publishers__col publishers__col_2">Banners Full Size 468x60</p>
+									<p class="publishers__col publishers__col_3">$0.60/10 clicks </p>
+									<p class="publishers__col publishers__col_4">$0.60/500 impressions</p>
+								</div>
+								<div class="publishers__table-row">
+								<p class="publishers__col publishers__col_1">Zone Banners 468x60 example</p>
+								<p class="publishers__col publishers__col_2">Banners Full Size 468x60</p>
+								<p class="publishers__col publishers__col_3">$0.60/10 clicks </p>
+								<p class="publishers__col publishers__col_4">$0.60/500 impressions</p>
+							</div>
+							</div>
+						</div>
+					</div>
+					{#/TABLE#}
+
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	{#/PUBLISHERS#}
+
+{% endblock %}
