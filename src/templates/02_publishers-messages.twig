@@ -1,0 +1,66 @@
+
+{% extends 'parts/layout.twig' %}
+
+{% block title %}
+	<title>Publisher messages</title>
+{% endblock %}
+
+
+{% block content %}
+
+	{#PUBLISHERS#}
+	<div class="publishers">
+		<div class="publishers__bg" style="background-image: url(img/publish_bg.jpg)">
+			<div class="publishers__bg-darken">
+				<div class="publishers__inner container-publishers">
+					<div class="publishers__block">
+						<div class="publishers__title">Send a New Message to Admin</div>
+
+						{#FORM#}
+						<div class="publishers__form">
+							<form>
+								<div class="publishers__form-item">
+									<span class="publishers__form-text">Title</span>
+									<div class="form__input-holder">
+										<input type="text" class="form__input" placeholder="Title">
+									</div>
+								</div>
+								<div class="publishers__form-item">
+									<span class="publishers__form-text">Text</span>
+									<div class="form__input-holder">
+										<input type="text" class="form__input" placeholder="Text">
+									</div>
+								</div>
+								<div class="publishers__form-item">
+									<span class="publishers__form-text"></span>
+									<div class="form__input-holder">
+										<button type="submit" class="form__submit btn">
+											submit
+										</button>
+									</div>
+								</div>
+
+							</form>
+						</div>
+						{#/FORM#}
+
+					</div>
+					<div class="publishers__block">
+						<div class="publishers__title">Existing Messages</div>
+
+						{#TABLE#}
+						<div class="publishers__table">
+							<div class="publishers__table-block publishers__table-block_mesages">
+								<p class="publishers__table-block-no-messages">No one message is available</p>
+							</div>
+						</div>
+						{#/TABLE#}
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{#/PUBLISHERS#}
+
+{% endblock %}

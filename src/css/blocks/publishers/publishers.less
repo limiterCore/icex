@@ -9,7 +9,7 @@
 	}
 	&__bg-darken {
 		background-color: #5E6267;
-		opacity: 0.7;
+		opacity: 0.9;
 	}
 	&__block {
 	}
@@ -77,16 +77,25 @@
 	&__table-block {
 		border: 1px solid white;
 		padding: 22px 0/*65px*/ 55px 59px;
+		&_mesages {
+			padding: 24px;
+		}
 
 
 	}
 	&__table-block-inner {
 		overflow: scroll;
-		max-height: 415px;
+		max-height: 393px;
 	}
 	&__table-row {
 		margin-bottom: 42px;
 		display: flex;
+	}
+	&__table-block-no-messages {
+		font-size: @16;
+		line-height: 1.13;
+		color: #00c9b3;
+		.regular();
 	}
 	&__col {
 		//display: inline-block;
