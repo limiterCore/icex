@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	{% block title %}
+	{% endblock %}
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+</head>
+
+<body>
+
+<div class="all-wrap">
+	{% block header %}
+		{% include 'parts/header-publishers.twig' %}
+	{% endblock %}
+
+	{% block content %}
+	{% endblock %}
+
+	{% block footer %}
+		{% include 'parts/footer-publishers.twig' %}
+	{% endblock %}
+</div>
+
+<!-- uncache -->
+<link rel="stylesheet" href="css/main.css">
+<!-- enduncache -->
+
+{% block scripts %}
+<!-- uncache -->
+<script src="scripts/app.min.js"></script>
+<!-- enduncache -->
+{% endblock %}
+
+</body>
+</html>
