@@ -1,12 +1,19 @@
 .features {
-	padding-bottom: 110px;
+
 
 	&__container {
-		max-width: 1560px + 40px;
-		padding-left: 20px;
-		padding-right: 20px;
-		margin-left: auto;
-		margin-right: auto;
+		.guest-home__features & {
+			max-width: 1560px + 40px;
+			padding-left: 20px;
+			padding-right: 20px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	&__list {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
 	}
 	&__slider {
 
@@ -41,6 +48,12 @@
 		&.loaded {
 			opacity: 1;
 			transform: translateY(0);
+		}
+		.features__list & {
+			margin-right: 41px;
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 	}
 	&__slider-item-icon {
