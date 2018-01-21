@@ -2,11 +2,18 @@
 	background: #1F242D;
 	padding-top: 58px;
 	padding-bottom: 31px;
+	&_main {
+		padding-top: 31px;
+	}
 
 	&__container {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		.footer_main & {
+			justify-content: center;
+			flex-direction: column;
+		}
 	}
 	&__left-part {
 		display: flex;
@@ -81,6 +88,36 @@
 		color: #c9cbca;
 		font-size: @16;
 		.light();
+	}
+
+	&__link-list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 32px;
+	}
+	&__link-item {
+		color: white;
+		font-size: @14;
+		text-decoration: none;
+		.light();
+		margin-right: 14px;
+		transition: all .3s ease;
+		&:last-child {
+			margin-right: 0;
+		}
+		.no-touchevents & {
+			&:hover {
+				color: @turquoise-color;
+			}
+		}
+	}
+	&__copyright {
+		color: white;
+		font-size: @14;
+		text-decoration: none;
+		.light();
+		text-align: center;
 	}
 }
 

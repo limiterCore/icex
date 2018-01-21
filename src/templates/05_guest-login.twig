@@ -1,7 +1,7 @@
 {% extends 'parts/layout-guest.twig' %}
 
 {% block title %}
-	<title>Contact us - ICEX Media</title>
+	<title>Guest registration - ICEX Media</title>
 {% endblock %}
 
 {% block header %}
@@ -53,35 +53,41 @@
 
 
 {% block content %}
-	{#CONTACT US#}
-	<div class="contact-us" style="background-image: url(img/contact-us-bg.jpg)">
-		<div class="contact-us__container container">
-			<h1 class="contact-us__title">Contact Us</h1>
-			<div class="contact-us__content">
+	{#GUEST LOGIN#}
+	<div class="guest-login" style="background-image: url(img/contact-us-bg.jpg)">
+		<div class="guest-login__container container">
+			<div class="guest-login__content">
 				<div class="guest-form">
 					<form>
 						<div class="guest-form__line">
 							<div class="guest-form__line-title-wrap">
-								<p class="guest-form__line-title guest-form__line-title_required">Name</p>
+								<p class="guest-form__line-title">Username</p>
 							</div>
 							<div class="guest-form__input-holder">
-								<input type="text" class="guest-form__input" placeholder="Name">
+								<input type="text" class="guest-form__input" placeholder="Username">
 							</div>
 						</div>
 						<div class="guest-form__line">
 							<div class="guest-form__line-title-wrap">
-								<p class="guest-form__line-title guest-form__line-title_required">E-mail</p>
+								<p class="guest-form__line-title">Password</p>
 							</div>
 							<div class="guest-form__input-holder">
-								<input type="text" class="guest-form__input" placeholder="E-mail">
+								<input type="text" class="guest-form__input" placeholder="Password">
 							</div>
 						</div>
-						<div class="guest-form__line">
-							<div class="guest-form__line-title-wrap">
-								<p class="guest-form__line-title guest-form__line-title_required">Message</p>
+
+						<div class="guest-login__choose-type">
+							<div class="guest-login__choose-type-item-wrap">
+								<a href="#" class="guest-login__choose-type-item guest-login__choose-type-item_active">Publisher</a>
 							</div>
-							<div class="guest-form__textarea-holder">
-								<textarea cols="30" rows="10" class="guest-form__textarea" placeholder="Your message"></textarea>
+							<div class="guest-login__choose-type-item-wrap">
+								<a href="#" class="guest-login__choose-type-item">Advertiser</a>
+							</div>
+						</div>
+						<div class="guest-form__line guest-form__line_checkbox">
+							<div class="guest-form__checkbox-holder">
+								<input type="checkbox" class="checkbox-styled js-checkbox">
+								<div class="guest-form__checkbox-text">Remember me</div>
 							</div>
 						</div>
 						<div class="guest-form__line guest-form__line_submit">
@@ -94,5 +100,5 @@
 			</div>
 		</div>
 	</div>
-	{#/CONTACT US#}
+	{#/GUEST LOGIN#}
 {% endblock %}
