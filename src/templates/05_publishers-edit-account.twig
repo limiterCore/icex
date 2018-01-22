@@ -20,107 +20,141 @@
 						{#FORM#}
 						<div class="publishers__form publishers__form_edit-account ">
 							<form>
-								<div class="publishers__form-item">
-									<span class="publishers__form-text-account publishers__form-text-account_name">Name</span>
+								<div class="form__input-container">
+									<div class="form__input-text-wrap form__input-text-wrap_account">
+										<p class="form__input-text form__input-text_required">Name</p>
+									</div>
 									<div class="form__input-holder">
 										<input type="text" class="form__input">
 									</div>
 								</div>
-								<div class="publishers__form-item">
-									<span class="publishers__form-text-account publishers__form-text-account_email">E-mail</span>
+								<div class="form__input-container">
+									<div class="form__input-text-wrap form__input-text-wrap_account">
+										<p class="form__input-text form__input-text_required">E-mail</p>
+									</div>
 									<div class="form__input-holder">
 										<input type="text" class="form__input">
 									</div>
 								</div>
-								<div class="publishers__form-item">
-									<span class="publishers__form-text-account publishers__form-text-account_pass">Password</span>
+								<div class="form__input-container">
+									<div class="form__input-text-wrap form__input-text-wrap_account">
+										<p class="form__input-text">Password</p>
+										<p class="form__input-under-text">Keep it blank to use the current password</p>
+									</div>
 									<div class="form__input-holder">
 										<input type="text" class="form__input">
 									</div>
 								</div>
-								<div class="publishers__form-item">
-									<span class="publishers__form-text-account">Company name</span>
+								<div class="form__input-container">
+									<div class="form__input-text-wrap form__input-text-wrap_account">
+										<p class="form__input-text">Company name</p>
+									</div>
 									<div class="form__input-holder">
 										<input type="text" class="form__input">
 									</div>
 								</div>
-								<div class="publishers__form-item">
-									<span class="publishers__form-text-account">Business ID</span>
+								<div class="form__input-container">
+									<div class="form__input-text-wrap form__input-text-wrap_account">
+										<p class="form__input-text">Business ID</p>
+									</div>
 									<div class="form__input-holder">
 										<input type="text" class="form__input">
 									</div>
 								</div>
-								<div class="publishers__form-item">
-									<span class="publishers__form-text-account">City</span>
+								<div class="form__input-container">
+									<div class="form__input-text-wrap form__input-text-wrap_account">
+										<p class="form__input-text">City</p>
+									</div>
 									<div class="form__input-holder">
 										<input type="text" class="form__input">
 									</div>
 								</div>
-								<div class="publishers__form-item">
-									<span class="publishers__form-text-account">Country</span>
+								<div class="form__input-container">
+									<div class="form__input-text-wrap form__input-text-wrap_account">
+										<p class="form__input-text">Country</p>
+									</div>
 									<div class="form__input-holder">
 										<input type="text" class="form__input">
 									</div>
 								</div>
-								<div class="publishers__form-item">
-									<span class="publishers__form-text-account">Phone number</span>
+								<div class="form__input-container">
+									<div class="form__input-text-wrap form__input-text-wrap_account">
+										<p class="form__input-text">Phone number</p>
+									</div>
 									<div class="form__input-holder">
 										<input type="text" class="form__input">
 									</div>
 								</div>
-								<div class="publishers__form-item">
-									<span class="publishers__form-text-account">Payment method</span>
+								<div class="form__input-container">
+									<div class="form__input-text-wrap form__input-text-wrap_account">
+										<p class="form__input-text">Payment method</p>
+									</div>
 									<div class="form__input-holder">
 										<input type="text" class="form__input">
 									</div>
 								</div>
-								<div class="publishers__form-item">
-									<span class="publishers__form-text-account publishers__form-text-account_details">Payment details</span>
+								<div class="form__input-container">
+									<div class="form__input-text-wrap form__input-text-wrap_account">
+										<p class="form__input-text">Payment details</p>
+									</div>
 									<div class="form__input-holder">
 										<textarea class="form__textarea form__textarea_publishers"></textarea>
 									</div>
 								</div>
-								<div class="publishers__form-item">
-									<span class="publishers__form-text-account" >Payment method</span>
+								<div class="form__input-container">
+									<div class="form__input-text-wrap form__input-text-wrap_account">
+										<span class="form__input-text" >Payment method</span>
+									</div>
 									<div class="form__input-holder form__input-holder_select">
 										<select class="form__input">
-											<option class="publishers__form-option">Check</option>
-											<option class="publishers__form-option">Check</option>
-											<option class="publishers__form-option">Check</option>
-											<option class="publishers__form-option">Check</option>
+											<option class="form__input-select-option">Check</option>
+											<option class="form__input-select-option">Check</option>
+											<option class="form__input-select-option">Check</option>
+											<option class="form__input-select-option">Check</option>
 										</select>
 									</div>
 								</div>
-								<div class="publishers__form-item">
-									<span class="publishers__form-text-account publishers__form-text-account_minimum">Minimum payment</span>
+								<div class="form__input-container">
+									<div class="form__input-text-wrap">
+										<div class="form__input-text-wrap form__input-text-wrap_account">
+											<span class="form__input-textinput-title-text {#publishers__form-text-account publishers__form-text-account_minimum#}">Minimum payment</span>
+										</div>
+
+									</div>
 									<div class="form__input-holder form__input-holder_mini">
 										<input type="text" class="form__input" placeholder="0">
 									</div>
 									<div class="form__input-holder form__input-holder_check">
-										<input type="checkbox" class="js-checkkbox checkbox-styled">
+										<input type="checkbox" class="js-checkbox checkbox-styled">
 									</div>
 									<p class="publishers__form-text-checkbox">Hold next payment</p>
 								</div>
-								<div class="publishers__form-item">
-									<span class="publishers__form-text-account publishers__form-text-account_never">Never show ads of advertisers</span>
+								<div class="form__input-container">
+									<div class="form__input-text-wrap form__input-text-wrap_account">
+										<span class="form__input-text publishers__form-text-account_never">Never show ads of advertisers</span>
+									</div>
 									<div class="form__input-holder">
 										<textarea class="form__textarea form__textarea_publishers"></textarea>
 									</div>
 								</div>
 
-								<div class="publishers__form-item">
-									<span class="publishers__form-text-account" >Style</span>
+								<div class="form__input-container">
+									<div class="form__input-text-wrap form__input-text-wrap_account">
+										<p class="form__input-text">Style</p>
+									</div>
 									<div class="form__input-holder form__input-holder_select">
 										<select class="form__input">
-											<option class="publishers__form-option">Siler</option>
-											<option class="publishers__form-option">Other Siler</option>
-											<option class="publishers__form-option">Not Siler</option>
-											<option class="publishers__form-option">Some Siler</option>
+											<option class="form__input-select-option">Siler</option>
+											<option class="form__input-select-option">Other Siler</option>
+											<option class="form__input-select-option">Not Siler</option>
+											<option class="form__input-select-option">Siler</option>
 										</select>
 									</div>
 								</div>
-								<div class="publishers__form-item">
-									<span class="publishers__form-text-account"></span>
+								<div class="form__input-container">
+									<div class="form__input-text-wrap form__input-text-wrap_account">
+										<span class="form__input-text"></span>
+									</div>
 									<div class="form__input-holder">
 										<button type="submit" class="form__submit btn">
 											submit

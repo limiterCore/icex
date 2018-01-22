@@ -1,5 +1,12 @@
 .form {
 
+	&__input-container {
+		display: flex;
+		margin-bottom: 18px;
+		.form__input-holder {
+			margin-bottom: 0;
+		}
+	}
 	&__input-holder {
 		margin-bottom: 18px;
 		width: 100%;
@@ -106,4 +113,48 @@
 	&__submit {
 		text-align: right;
 	}
+
+	&__input-text-wrap {
+		min-width: 174px;
+		padding-top: 8px;
+		position: relative;
+		&_account {
+			min-width: 232px;
+			max-width: 232px;
+		}
+	}
+	&__input-text {
+		display: inline-block;
+		padding-bottom: 4px;
+		font-size: @16;
+		color: #ffffff;
+		.light();
+		&_required {
+			position: relative;
+			&:after {
+				position: absolute;
+				content: '*';
+				right: -10px;
+				top: 3px;
+				color: #AF1712;
+				.light();
+				font-size: @18;
+			}
+		}
+	}
+	&__input-under-text {
+		color: #8c9398;
+		.light();
+		font-size: @14;
+		padding-right: 69px;
+	}
+	&__input-select-option {
+		color: white;
+		.regular();
+		font-size: @16;
+		background-color: #797D81;
+	}
+
+
+
 }
