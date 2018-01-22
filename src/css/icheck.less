@@ -6,6 +6,22 @@
 	border: 1px solid rgba(255, 255, 255, 0.9);
 	background: rgba(255, 255, 255, 0.2);
 	cursor: pointer;
+	&_small {
+		height: 14px;
+		width: 14px;
+		min-width: 14px;
+		&:after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			.svg-icon(icon-checked, 11px, 8px);
+			margin-top: -2px;
+			margin-left: -1px;
+			display: none;
+			pointer-events: none;
+		}
+	}
 	&:after {
 		content: '';
 		position: absolute;
