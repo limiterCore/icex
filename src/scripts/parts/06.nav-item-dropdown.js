@@ -2,13 +2,13 @@
  * ICheck - in subscribe block
  */
 (function($) {
-	var $link = $('.js-header-nav-item-trigger'),
-		$dropdown = $link.find('.js-header-nav-item-dropdown');
+	var $link = $('.js-header-nav-item-trigger');
 
 	$link.click(function() {
-		$dropdown.toggleClass('header__nav-item-dropdown_open');
-		$link.toggleClass('header__nav-item_open');
+		var $t = $(this),
+			$dropdown = $t.find('.js-header-nav-item-dropdown');
 
-		return false;
+		$dropdown.toggleClass('header__nav-item-dropdown_open');
+		$t.toggleClass('header__nav-item_open');
 	});
 })(jQuery);
