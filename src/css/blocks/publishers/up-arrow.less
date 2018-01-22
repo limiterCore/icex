@@ -1,0 +1,30 @@
+.up-arrow {
+	width: 52px;
+	height: 52px;
+	border-radius: 50%;
+	background-color: rgba(47, 154, 146, 0.62);
+	z-index: 50;
+	position: fixed;
+	bottom: 96px;
+	right: 50px;
+	&:before {
+		position: absolute;
+		content: '';
+		width: 14px;
+		height: 6px;
+		transform: rotate(-45deg);
+		top: 22px;
+		left: 16px;
+		background-color: white;
+	}
+	&:after {
+		position: absolute;
+		content: '';
+		width: 14px;
+		height: 6px;
+		transform: rotate(45deg);
+		top: 22px;
+		right: 16px;
+		background-color: white;
+	}
+}
