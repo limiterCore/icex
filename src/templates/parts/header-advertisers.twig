@@ -18,6 +18,7 @@
 				<img src="img/logo-mobile.svg" alt="" class="header__logo-img">
 			</a>
 			{#/LOGO#}
+
 			{#NAV#}
 			<nav class="header__nav" id="nav">
 				<div class="header__nav-logo-wrap">
@@ -25,13 +26,33 @@
 				</div>
 
 
+				<div class="header__nav-item header__nav-item_login header__nav-item_dropdown js-header-nav-item-trigger">
+					<a href="#" class="header__nav-item-text">Kalista</a>
+					<i class="header__nav-item-icon"></i>
+					<div class="header__nav-item-dropdown js-header-nav-item-dropdown">
+						<a href="#" class="header__nav-item-dropdown-link">Edit Account</a>
+						<a href="#" class="header__nav-item-dropdown-link">Log Off</a>
+					</div>
+				</div>
 				<a href="#" class="header__nav-item">Home</a>
 				<a href="#" class="header__nav-item">Ads</a>
 				<a href="#" class="header__nav-item">Campaigns</a>
 				<a href="#" class="header__nav-item">Export</a>
 				<a href="#" class="header__nav-item">Messages</a>
 				<a href="#" class="header__nav-item">Publishers</a>
-				<a href="#" class="header__nav-item">Orders</a>
+				<a href="#" class="header__nav-item header__nav-item_response">Orders</a>
+				<div class="header__nav-item header__nav-item_dropdown js-header-nav-item-trigger">
+					<a href="#" class="header__nav-item-text">Orders</a>
+					<i class="header__nav-item-icon"></i>
+					<div class="header__nav-item-dropdown js-header-nav-item-dropdown">
+						<a href="#" class="header__nav-item-dropdown-link">Existing Orders</a>
+						<a href="#" class="header__nav-item-dropdown-link">New Order</a>
+					</div>
+				</div>
+				<a href="#" class="header__add-new header__add-new_response">
+					<i class="header__add-new-icon"></i>
+					<span class="header__add-new-text">New Ad</span>
+				</a>
 			</nav>
 			{#/NAV#}
 		</div>

@@ -1,0 +1,145 @@
+
+{% extends 'parts/layout-publishers.twig' %}
+
+{% block title %}
+	<title>Publisher Edit Account</title>
+{% endblock %}
+
+
+{% block content %}
+
+	{#EDIT ACCOUNT#}
+	<div class="publishers">
+		<div class="publishers__bg" style="background-image: url(img/publish_bg.jpg)">
+			<div class="publishers__bg-bottom"></div>
+			<div class="publishers__bg-darken">
+				<div class="publishers__inner container-publishers">
+					<div class="publishers__block">
+						<div class="publishers__title">Your Account Data</div>
+
+						{#FORM#}
+						<div class="publishers__form publishers__form_edit-account ">
+							<form>
+								<div class="publishers__form-item">
+									<span class="publishers__form-text-account publishers__form-text-account_name">Name</span>
+									<div class="form__input-holder">
+										<input type="text" class="form__input">
+									</div>
+								</div>
+								<div class="publishers__form-item">
+									<span class="publishers__form-text-account publishers__form-text-account_email">E-mail</span>
+									<div class="form__input-holder">
+										<input type="text" class="form__input">
+									</div>
+								</div>
+								<div class="publishers__form-item">
+									<span class="publishers__form-text-account publishers__form-text-account_pass">Password</span>
+									<div class="form__input-holder">
+										<input type="text" class="form__input">
+									</div>
+								</div>
+								<div class="publishers__form-item">
+									<span class="publishers__form-text-account">Company name</span>
+									<div class="form__input-holder">
+										<input type="text" class="form__input">
+									</div>
+								</div>
+								<div class="publishers__form-item">
+									<span class="publishers__form-text-account">Business ID</span>
+									<div class="form__input-holder">
+										<input type="text" class="form__input">
+									</div>
+								</div>
+								<div class="publishers__form-item">
+									<span class="publishers__form-text-account">City</span>
+									<div class="form__input-holder">
+										<input type="text" class="form__input">
+									</div>
+								</div>
+								<div class="publishers__form-item">
+									<span class="publishers__form-text-account">Country</span>
+									<div class="form__input-holder">
+										<input type="text" class="form__input">
+									</div>
+								</div>
+								<div class="publishers__form-item">
+									<span class="publishers__form-text-account">Phone number</span>
+									<div class="form__input-holder">
+										<input type="text" class="form__input">
+									</div>
+								</div>
+								<div class="publishers__form-item">
+									<span class="publishers__form-text-account">Payment method</span>
+									<div class="form__input-holder">
+										<input type="text" class="form__input">
+									</div>
+								</div>
+								<div class="publishers__form-item">
+									<span class="publishers__form-text-account publishers__form-text-account_details">Payment details</span>
+									<div class="form__input-holder">
+										<textarea class="form__textarea form__textarea_publishers"></textarea>
+									</div>
+								</div>
+								<div class="publishers__form-item">
+									<span class="publishers__form-text-account" >Payment method</span>
+									<div class="form__input-holder form__input-holder_select">
+										<select class="form__input">
+											<option class="publishers__form-option">Check</option>
+											<option class="publishers__form-option">Check</option>
+											<option class="publishers__form-option">Check</option>
+											<option class="publishers__form-option">Check</option>
+										</select>
+									</div>
+								</div>
+								<div class="publishers__form-item">
+									<span class="publishers__form-text-account publishers__form-text-account_minimum">Minimum payment</span>
+									<div class="form__input-holder form__input-holder_mini">
+										<input type="text" class="form__input" placeholder="0">
+									</div>
+									<div class="form__input-holder form__input-holder_check">
+										<input type="checkbox" class="js-checkkbox checkbox-styled">
+									</div>
+									<p class="publishers__form-text-checkbox">Hold next payment</p>
+								</div>
+								<div class="publishers__form-item">
+									<span class="publishers__form-text-account publishers__form-text-account_never">Never show ads of advertisers</span>
+									<div class="form__input-holder">
+										<textarea class="form__textarea form__textarea_publishers"></textarea>
+									</div>
+								</div>
+
+								<div class="publishers__form-item">
+									<span class="publishers__form-text-account" >Style</span>
+									<div class="form__input-holder form__input-holder_select">
+										<select class="form__input">
+											<option class="publishers__form-option">Siler</option>
+											<option class="publishers__form-option">Other Siler</option>
+											<option class="publishers__form-option">Not Siler</option>
+											<option class="publishers__form-option">Some Siler</option>
+										</select>
+									</div>
+								</div>
+								<div class="publishers__form-item">
+									<span class="publishers__form-text-account"></span>
+									<div class="form__input-holder">
+										<button type="submit" class="form__submit btn">
+											submit
+										</button>
+									</div>
+								</div>
+
+							</form>
+						</div>
+						{#/FORM#}
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		{#STYLE#}
+		{#/STYLE#}
+	</div>
+	{#/EDIT ACCOUNT#}
+
+{% endblock %}
