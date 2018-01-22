@@ -7,6 +7,12 @@
 	position: fixed;
 	bottom: 96px;
 	right: 50px;
+	cursor: pointer;
+	transition: all 0.5s ease-out ;
+	&:hover {
+		background: @turquoise-color;
+		filter: drop-shadow(0 0 4px @turquoise-color);
+	}
 	&:before {
 		position: absolute;
 		content: '';
