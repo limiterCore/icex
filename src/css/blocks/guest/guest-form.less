@@ -38,6 +38,13 @@
 			}
 		}
 	}
+	&__line-subtitle {
+		color: #8c9398;
+		font-size: @14;
+		.light();
+		margin-top: 10px;
+	}
+
 	&__input-holder {
 		width: 100%;
 	}
@@ -76,6 +83,7 @@
 			border-color: @turquoise-color;
 		}
 	}
+
 	&__textarea-holder {
 		width: 100%;
 	}
@@ -168,5 +176,25 @@
 				text-decoration: underline;
 			}
 		}
+	}
+
+	&__select-holder {
+		width: 100%;
+		overflow: hidden;
+		margin-bottom: 20px;
+		border: 1px solid rgba(255, 255, 255, 0.9);
+	}
+	&__select {
+		width: 110%;
+		height: 61px;
+		border: 0;
+		-webkit-appearance: none;
+		outline: none;
+		padding: 0 22px;
+		background: rgba(255, 255, 255, 0.2);
+
+		color: white;
+		font-size: @14;
+		.regular();
 	}
 }

@@ -1,0 +1,70 @@
+{% extends 'parts/layout-advertisers.twig' %}
+
+{% block title %}
+	<title>New Add Advertisers - ICEX Media</title>
+{% endblock %}
+
+
+{% block content %}
+{#HOME ADVERTISERS#}
+	<div class="home-adv"  style="background-image: url(img/contact-us-bg.jpg)">
+		<div class="home-adv__container container">
+			<h1 class="home-adv__title">Welcome back !</h1>
+			<div class="home-adv__content">
+				<div class="home-adv__chart" id="home-adv-chart" style="width: 100%; height: 500px;"></div>
+			</div>
+			<p class="home-adv__subtitle">Countries where your ads have been displayed in December 2017</p>
+		</div>
+	</div>
+{#/HOME ADVERTISERS#}
+{% endblock %}
+
+{% block userscripts %}
+	<script src="https://www.gstatic.com/charts/loader.js"></script>
+	<script>
+		(function() {
+			google.charts.load('current', {'packages':['corechart']});
+			google.charts.setOnLoadCallback(drawChart);
+
+			console.log("!");
+
+			function drawChart() {
+				var data = google.visualization.arrayToDataTable([
+					['Year', 'Sales'],
+					['2013',  1000],
+					['2014',  1170],
+					['2015',  660],
+					['2016',  1030]
+				]);
+
+				var options = {
+					hAxis: {title: 'Year',  titleTextStyle: {color: '#ffffff'}},
+					vAxis: {minValue: 0},
+					backgroundColor: { fill:'transparent' },
+					chartArea: {
+						backgroundColor: {
+							gradient: {
+								// Start color for gradient.
+								color1: '#fbf6a7',
+								// Finish color for gradient.
+								color2: '#33b679',
+								// Where on the boundary to start and
+								// end the color1/color2 gradient,
+								// relative to the upper left corner
+								// of the boundary.
+								x1: '0%', y1: '0%',
+								x2: '100%', y2: '100%',
+								// If true, the boundary for x1,
+								// y1, x2, and y2 is the box. If
+								// false, it's the entire chart.
+							}
+						}
+					}
+				};
+				// Instantiate and draw our chart, passing in some options.
+				var chart = new google.visualization.AreaChart(document.getElementById('home-adv-chart'));
+				chart.draw(data, options);
+			}
+		})();
+	</script>
+{% endblock %}
