@@ -24,11 +24,13 @@
 		}
 		&_mini {
 			width: 301px;
+			margin-right: 178px;
 		}
 		&_check {
 			text-align: right;
-			width: 200px;
-			padding-top: 17px;
+			width: 28px;
+			display: inline-block;
+			padding-bottom: 8px;
 		}
 	}
 	&__input {
@@ -147,6 +149,7 @@
 		.light();
 		font-size: @14;
 		padding-right: 69px;
+		line-height: 1.1;
 	}
 	&__input-select-option {
 		color: white;
@@ -154,7 +157,8 @@
 		font-size: @16;
 		background-color: #797D81;
 	}
-
-
-
+	&__block {
+		display: inline-flex;
+		align-items: center;
+	}
 }
