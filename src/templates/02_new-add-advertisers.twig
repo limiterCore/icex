@@ -1,0 +1,50 @@
+{% extends 'parts/layout-advertisers.twig' %}
+
+{% block title %}
+	<title>New Add Advertisers - ICEX Media</title>
+{% endblock %}
+
+
+{% block content %}
+{#NEW ADD ADVERTISERS#}
+	<div class="new-add-adv"  style="background-image: url(img/contact-us-bg.jpg)">
+		<div class="new-add-adv__container container">
+			<h1 class="new-add-adv__title">Create a New Ad</h1>
+			<div class="new-add-adv__content">
+				<div class="guest-form">
+					<form>
+						<div class="guest-form__line">
+							<div class="guest-form__line-title-wrap">
+								<p class="guest-form__line-title">Title</p>
+								<p class="guest-form__line-subtitle">For your reference</p>
+							</div>
+							<div class="guest-form__input-holder">
+								<input type="text" class="guest-form__input">
+							</div>
+						</div>
+						<div class="guest-form__line">
+							<div class="guest-form__line-title-wrap">
+								<p class="guest-form__line-title">Add type</p>
+							</div>
+							<div class="guest-form__select-holder">
+								<select class="guest-form__select">
+									<option value="1">Banners Full Size 468x60</option>
+									<option value="1">Banners Full Size 468x60</option>
+									<option value="1">Banners Full Size 468x60</option>
+									<option value="1">Banners Full Size 468x60</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="guest-form__line guest-form__line_submit">
+							<div class="guest-form__submit-holder">
+								<button class="guest-form__submit" type="submit">continue</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+{#/NEW ADD ADVERTISERS#}
+{% endblock %}
