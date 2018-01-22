@@ -1,13 +1,22 @@
 .publishers {
 
-	&_bg {
+	&__bg {
 		background-repeat: no-repeat;
 		background-position: center center;
-		background-size: contain;
+		background-size: cover;
 
+		position: relative;
+	}
+	&__bg-bottom {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		height: 200px;
+		background-color: #65686E;
 	}
 	&__bg-darken {
-		background-color: rgba(94, 98, 103, 0.9);
+		background-color: rgba(45, 47, 54, 0.7);
 	}
 	&__block {
 	}
@@ -20,12 +29,15 @@
 	}
 	&__form {
 		padding-bottom: 15px;
+		&_edit-account {
+			padding-bottom: 36px;
+		}
 	}
 	&__form-item {
 		display: flex;
 	}
 	&__form-text {
-		width: 174px;
+		min-width: 174px;
 		padding-top: 8px;
 		font-size: @16;
 		color: #ffffff;
@@ -44,11 +56,101 @@
 		}
 
 	}
+	&__form-text-account {
+		min-width: 232px;
+		padding-top: 8px;
+		font-size: @16;
+		color: #ffffff;
+		position: relative;
+		.light();
+		&_name {
+			position: relative;
+			&:after {
+				position: absolute;
+				content: '*';
+				left: 52px;
+				top: 5px;
+				color: #AF1712;
+				.light();
+				font-size: @18;
+			}
+		}
+		&_email {
+			position: relative;
+			&:after {
+				position: absolute;
+				content: '*';
+				left: 55px;
+				top: 5px;
+				color: #AF1712;
+				.light();
+				font-size: @18;
+			}
+		}
+		&_pass {
+			position: relative;
+			&:before {
+				position: absolute;
+				content: 'Keep it blank to use the current password';
+				left: 0;
+				top: 32px;
+				color: #8c9398;
+				.light();
+				font-size: @14;
+			}
+		}
+		&_details {
+			position: relative;
+			&:before {
+				position: absolute;
+				content: 'For example bank account info, Paypal email address, name on a check etc.';
+				left: 0;
+				top: 32px;
+				color: #8c9398;
+				.light();
+				font-size: @14;
+				right: 43px;
+			}
+		}
+		&_never {
+			position: relative;
+			&:before {
+				position: absolute;
+				content: 'Enter usernames (separated by commas) of advertisers whose ads should never be displayed on your site.';
+				left: 0;
+				top: 45px;
+				color: #8c9398;
+				.light();
+				font-size: @14;
+				right: 43px;
+			}
+		}
+		&_minimum {
+			position: relative;
+			&:before {
+				position: absolute;
+				content: 'Minimum is $50';
+				left: 0;
+				top: 32px;
+				color: #8c9398;
+				.light();
+				font-size: @14;
+			}
+		}
+	}
 	&__form-option {
 		color: white;
 		.regular();
 		font-size: @16;
 		width: inherit;
+		background-color: #797D81;
+	}
+	&__form-text-checkbox {
+		line-height: 61px;
+		font-size: @16;
+		text-align: left;
+		.regular();
+		color: #ffffff;
 	}
 	&__table {
 		padding-bottom: 65px;
