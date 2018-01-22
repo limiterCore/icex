@@ -16,4 +16,40 @@
 		background: rgba(0, 0, 0, 0.7);
 		z-index: 10;
 	}
+	&__container {
+		position: relative;
+		z-index: 20;
+	}
+	&__title {
+		.guest-title();
+		margin-bottom: 40px;
+		.std-adv__title-wrap & {
+			margin-bottom: 10px;
+		}
+	}
+	&__subtitle {
+		font-size: @16;
+		.light();
+		text-align: center;
+		color: white;
+		line-height: 1.88;
+		margin-bottom: 38px;
+	}
+	&__content {
+
+		&_middle {
+			padding-right: 84px;
+		}
+		&_center {
+			padding-left: 57px;
+			padding-right: 85px;
+
+			.guest-form__input-holder {
+				width: calc(~"100% - 180px");
+			}
+			.guest-form__submit-holder {
+				width: calc(~"100% - 180px");
+			}
+		}
+	}
 }
