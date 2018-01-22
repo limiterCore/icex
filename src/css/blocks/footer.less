@@ -148,6 +148,10 @@
 
 		&__container {
 			align-items: flex-start;
+
+			.footer_main & {
+				align-items: center;
+			}
 		}
 		&__left-part {
 			flex-direction: column;
@@ -176,6 +180,22 @@
 			font-size: @12;
 		}
 		&__your-ads-media {
+			font-size: @12;
+		}
+
+		&__link-list {
+			//justify-content: center;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+			width: 100%;
+			margin-bottom: 0;
+		}
+		&__link-item {
+			//margin-right: 0;
+			font-size: @12;
+			margin-bottom: 22px;
+		}
+		&__copyright {
 			font-size: @12;
 		}
 	}
