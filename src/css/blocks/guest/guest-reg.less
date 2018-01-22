@@ -1,6 +1,6 @@
 .guest-reg {
 	padding-top: 39px;
-	padding-bottom: 202px;
+	padding-bottom: 39px;
 
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -36,9 +36,46 @@
 		}
 		.guest-form__submit-holder {
 			width: calc(~"100% - 180px");
+			justify-content: flex-start;
 		}
 		.guest-form__checkbox-holder {
 			width: calc(~"100% - 180px");
+		}
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.guest-reg {
+		&__content {
+
+			.guest-form__input-holder {
+				width: calc(~"100% - 180px");
+			}
+			.guest-form__textarea-holder {
+				width: calc(~"100% - 180px");
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.guest-reg {
+		&__content {
+
+			.guest-form__input-holder {
+				width: 100%;
+			}
+			.guest-form__textarea-holder {
+				width: 100%;
+			}
+			.guest-form__submit-holder {
+				width: 100%;
+				justify-content: center;
+			}
+			.guest-form__checkbox-holder {
+				width: 100%;
+			}
 		}
 	}
 }
