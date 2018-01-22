@@ -6,4 +6,5 @@ $(document).ready(function() {
 	//= parts/03.animate-details.js
 	//= parts/04.smooth-scroll.js
 	//= parts/05.icheck.js
+	//= parts/06.nav-item-dropdown.js
 });
