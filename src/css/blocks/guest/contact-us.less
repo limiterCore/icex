@@ -1,7 +1,7 @@
 .contact-us {
 	padding-top: 40px;
 	padding-bottom: 85px;
-	min-height: calc(~"100vh - 99px");
+	flex-grow: 20;
 
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -36,6 +36,29 @@
 		}
 		.guest-form__submit-holder {
 			width: calc(~"100% - 180px");
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.contact-us {
+		padding-top: 22px;
+		padding-bottom: 34px;
+
+		&__title {
+			margin-bottom: 23px;
+		}
+		&__content {
+
+			.guest-form__input-holder {
+				width: 100%;
+			}
+			.guest-form__textarea-holder {
+				width: 100%;
+			}
+			.guest-form__submit-holder {
+				width: 100%;
+			}
 		}
 	}
 }

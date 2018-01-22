@@ -1,5 +1,14 @@
 .guest-form {
 
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: calc(~"100vh - 118px - 43px");
+	}
+	&__top-part {
+
+	}
 	&__line {
 		margin-bottom: 20px;
 		display: flex;
@@ -125,6 +134,8 @@
 
 	&__submit-holder {
 		width: 100%;
+		display: flex;
+		justify-content: center;
 	}
 	&__submit {
 		height: 61px;
@@ -145,6 +156,7 @@
 		text-transform: uppercase;
 		.medium();
 		color: white;
+		font-size: @14;
 		transition: all .3s ease;
 
 		.no-touchevents & {
@@ -196,5 +208,87 @@
 		color: white;
 		font-size: @14;
 		.regular();
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.guest-form {
+
+		&_space-between {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		&__line {
+			margin-bottom: 14px;
+			&_checkbox {
+				margin-bottom: 26px;
+				justify-content: flex-end;
+			}
+			&_submit {
+				justify-content: flex-end;
+			}
+		}
+		&__line-title-wrap {
+			display: none;
+		}
+
+		&__input {
+			height: 40px;
+			padding: 0 12px;
+		}
+
+		&__textarea {
+			height: 179px;
+			padding: 14px 12px;
+		}
+
+		&__submit {
+			height: 45px;
+			padding: 0 43px;
+		}
+
+		&__checkbox-holder {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+		}
+		&__checkbox-text {
+			color: white;
+			font-size: @16;
+			.regular();
+		}
+		&__checkbox-link {
+			color: #00c9b3;
+			font-size: @16;
+			.regular();
+			text-decoration: none;
+			.no-touchevents & {
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+
+		&__select-holder {
+			width: 100%;
+			overflow: hidden;
+			margin-bottom: 20px;
+			border: 1px solid rgba(255, 255, 255, 0.9);
+		}
+		&__select {
+			width: 110%;
+			height: 61px;
+			border: 0;
+			-webkit-appearance: none;
+			outline: none;
+			padding: 0 22px;
+			background: rgba(255, 255, 255, 0.2);
+
+			color: white;
+			font-size: @14;
+			.regular();
+		}
 	}
 }
