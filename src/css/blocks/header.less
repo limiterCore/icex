@@ -297,7 +297,6 @@
 
 @media screen and (max-width: 1100px) {
 	.header {
-
 		&_grey {
 			position: relative;
 			z-index: 30;
@@ -322,9 +321,16 @@
 			}
 		}
 		&__nav {
+
 			.header_grey & {
 				display: none;
-				padding-bottom: 30px;
+				padding: 0 42px 30px 42px;
+				position: absolute;
+				z-index: 30;
+				left: 0;
+				right: 0;
+				top: 0;
+				background: white;
 			}
 		}
 		&__nav-item {
@@ -365,6 +371,14 @@
 		}
 		&__add-new-text {
 			font-size: @14;
+		}
+
+		&__nav-logo-wrap {
+			.header_grey & {
+				display: flex;
+				margin-top: 35px;
+				margin-bottom: 40px;
+			}
 		}
 	}
 }
@@ -420,6 +434,9 @@
 
 		&__nav-logo-wrap {
 			display: flex;
+			.header_grey & {
+				margin-top: 12px;
+			}
 		}
 	}
 }
