@@ -62,7 +62,10 @@
 			display: none;
 			position: relative;
 		}
-
+		&_response {
+			cursor: pointer;
+			position: relative;
+		}
 		.no-touchevents & {
 			&:hover {
 				color: @turquoise-color;
@@ -152,6 +155,8 @@
 		align-items: center;
 		justify-content: flex-end;
 		text-decoration: none;
+		position: relative;
+		cursor: pointer;
 	}
 	&__login-icon {
 		.svg-icon(icon-login, 10px, 14px);

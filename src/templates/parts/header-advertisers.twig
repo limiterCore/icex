@@ -2,7 +2,6 @@
 <div class="header header_grey">
 	<div class="header__container container">
 
-
 		{#BURGER#}
 		<div class="header__burger" id="burger">
 			<div class="header__burger-line"></div>
@@ -40,7 +39,19 @@
 				<a href="#" class="header__nav-item">Export</a>
 				<a href="#" class="header__nav-item">Messages</a>
 				<a href="#" class="header__nav-item">Publishers</a>
-				<a href="#" class="header__nav-item header__nav-item_response">Orders</a>
+				<div class="header__nav-item header__nav-item_response js-header-item-dropdown">
+					Orders
+					{#DROPDOWN#}
+					<div class="desktop-dropdown js-desktop-dropdown">
+						<div class="desktop-dropdown__link-wrap">
+							<a href="#" class="desktop-dropdown__link">Existing Orders</a>
+						</div>
+						<div class="desktop-dropdown__link-wrap">
+							<a href="#" class="desktop-dropdown__link">New Order</a>
+						</div>
+					</div>
+					{#/DROPDOWN#}
+				</div>
 				<div class="header__nav-item header__nav-item_dropdown js-header-nav-item-trigger">
 					<a href="#" class="header__nav-item-text">Orders</a>
 					<i class="header__nav-item-icon"></i>
@@ -64,10 +75,20 @@
 				<i class="header__add-new-icon"></i>
 				<span class="header__add-new-text">New Ad</span>
 			</a>
-			<a href="#" class="header__login">
+			<div class="header__login js-header-item-dropdown">
 				<i class="header__login-icon"></i>
 				<span class="header__login-text">Kalista</span>
-			</a>
+				{#DROPDOWN#}
+				<div class="desktop-dropdown js-desktop-dropdown">
+					<div class="desktop-dropdown__link-wrap">
+						<a href="#" class="desktop-dropdown__link">Edit account</a>
+					</div>
+					<div class="desktop-dropdown__link-wrap">
+						<a href="#" class="desktop-dropdown__link">Log off</a>
+					</div>
+				</div>
+				{#/DROPDOWN#}
+			</div>
 		</div>
 		{#/RIGHT PART#}
 

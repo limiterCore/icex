@@ -9,4 +9,5 @@ $(document).ready(function() {
 	//= parts/06.nav-item-dropdown.js
 	//= parts/07.input-placeholders-response.js
 	//= parts/08.export.js
+	//= parts/10.desktop-dropdowns.js
 });
