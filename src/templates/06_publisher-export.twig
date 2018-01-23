@@ -18,7 +18,7 @@
 						<div class="export__form">
 							<div class="export__form-select-wrap">
 								<div class="form__select-holder">
-								<select class="form__select">
+								<select class="form__select" id="export-item-select">
 									<option value="1">Overall Statistic</option>
 									<option value="2">Day-by-day Statistic</option>
 									<option value="3">Month-by-month Statistic</option>
@@ -26,7 +26,7 @@
 							</div>
 							</div>
 							{#OVERALL#}
-							<div class="export__over-all form__export-block" id="export_1">
+							<div class=" form__export-block form__export-block_active js-export-block" id="export-block_1">
 								<div class="form__up-wrap">
 									<div class="form__block-checkbox">
 										<input type="checkbox" class="js-checkbox-small">
@@ -77,7 +77,7 @@
 							{#/OVERALL#}
 
 							{#DAY BY DAY#}
-							<div class="export__day-by-day form__export-block" id="export_2">
+							<div class=" form__export-block js-export-block" id="export-block_2">
 
 								<div class="form__up-wrap">
 									<div class="form__block-checkbox">
@@ -146,7 +146,7 @@
 							{#/DAY BY DAY#}
 
 							{#MONTH BY MONTH#}
-							<div class="export__month-by-month form__export-block" id="export_3">
+							<div class=" form__export-block js-export-block" id="export-block_3">
 
 								<div class="form__up-wrap">
 									<div class="form__block-checkbox">

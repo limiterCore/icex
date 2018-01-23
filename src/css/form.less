@@ -238,10 +238,13 @@
 		.light();
 	}
 	&__export-block {
-		display: flex;
+		display: none;
 		flex-direction: column;
 		justify-content: space-between;
 		height: 70vh;
+		&_active {
+			display: flex;
+		}
 	}
 }
 
