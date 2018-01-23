@@ -1,4 +1,8 @@
 .publishers {
+	flex-grow: 20;
+	display: flex;
+	flex-direction: column;
+
 
 	&__bg {
 		background-repeat: no-repeat;
@@ -6,6 +10,9 @@
 		background-size: cover;
 
 		position: relative;
+		flex-grow: 20;
+		display: flex;
+		flex-direction: column;
 	}
 	&__bg-bottom {
 		position: absolute;
@@ -17,6 +24,13 @@
 	}
 	&__bg-darken {
 		background-color: rgba(45, 47, 54, 0.7);
+		flex-grow: 20;
+		display: flex;
+		flex-direction: column;
+	}
+	&__inner {
+		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 	&__block {
 	}
@@ -99,6 +113,86 @@
 		}
 		&_5 {
 			width: 54%;
+		}
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.publishers {
+		&__table {
+			padding-bottom: 0;
+			display: flex;
+		}
+		&__table-title {
+			flex-direction: column;
+			justify-content: space-around;
+			padding-bottom: 0;
+			min-width: 113px;
+			width: 30%;
+			padding-top: 7px;
+		}
+		&__th {
+			color: white;
+			.medium();
+			font-size: @14;
+			line-height: 1.29;
+			text-align: left;
+			width: 100%;
+			height: 34%;
+			&:first-child {
+				width: 100%;
+				height: 28%;
+			}
+			&:last-child {
+				width: 100%;
+				height: 38%;
+			}
+		}
+		&__table-block {
+			padding: 7px 0 12px 4px;
+		}
+		&__table-block-inner {
+			overflow: auto;
+			max-height: 100%;
+			overflow-x: hidden;
+			margin-bottom: -20px;
+			display: flex;
+		}
+		&__table-row {
+			margin-bottom: 0;
+			flex-direction: column;
+			min-width: 150px;
+		}
+		&__col {
+			.light();
+			font-size: 14px;
+			line-height: 1.29;
+			color: #ffffff;
+			text-align: center;
+			&_1 {
+				width: 100%;
+				height: 28%;
+				margin-bottom: 41px;
+			}
+			&_2 {
+				width: 100%;
+				height: 34%;
+				margin-bottom: 41px;
+			}
+			&_3 {
+				width: 100%;
+				height: 38%;
+				display: block;
+				margin-bottom: 41px;
+			}
+			&_4 {
+				width: 100%;
+				height: 46%;
+			}
+			&_5 {
+				width: 100%;
+				height: 54%;
+			}
 		}
 	}
 }
