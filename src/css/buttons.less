@@ -11,6 +11,7 @@
 	color: white;
 	font-size: @16;
 	line-height: 66px;
+	.medium();
 
 	text-transform: uppercase;
 	text-decoration: none;
@@ -65,5 +66,11 @@
 		height: 45px;
 		line-height: 45px;
 		font-size: @14;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.btn {
+		font-size: @9;
 	}
 }
