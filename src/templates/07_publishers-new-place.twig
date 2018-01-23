@@ -63,11 +63,15 @@
 
 					{#TABLE#}
 					<div class="publishers__table">
+						{#TABLE HEAD#}
 						<div class="publishers__table-title">
 							<div class="publishers__th">Title</div>
 							<div class="publishers__th">Ad type</div>
 							<div class="publishers__th">Payout</div>
 						</div>
+						{#/TABLE HEAD#}
+
+						{#TABLE BODY#}
 						<div class="publishers__table-block">
 							<div class="publishers__table-block-inner">
 								<div class="publishers__table-row">
@@ -143,7 +147,15 @@
 									</div>
 								</div>
 							</div>
+
+							{#SCROLLER#}
+							<div class="table-scroller">
+								<div class="table-scroller__itself"></div>
+								<div class="table-scroller__arrow"></div>
+							</div>
+							{#/SCROLLER#}
 						</div>
+						{#/TABLE BODY#}
 					</div>
 					{#/TABLE#}
 

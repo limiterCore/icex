@@ -39,6 +39,7 @@
 
 						{#PAYMENTS TABLE#}
 						<div class="payments-list">
+							{#TABLE HEAD#}
 							<div class="payments-list__title">
 								<div class="payments-list__title-item payments-list__title-item_1">Start date</div>
 								<div class="payments-list__title-item payments-list__title-item_2">End date</div>
@@ -54,6 +55,9 @@
 									next period
 								</div>
 							</div>
+							{#/TABLE HEAD#}
+
+							{#TABLE BODY#}
 							<div class="payments-list__block">
 								<div class="payments-list__inner">
 									<div class="payments-list__table-row">
@@ -139,7 +143,14 @@
 									</div>
 
 								</div>
+								{#SCROLLER#}
+								<div class="table-scroller">
+									<div class="table-scroller__itself"></div>
+									<div class="table-scroller__arrow"></div>
+								</div>
+								{#/SCROLLER#}
 							</div>
+							{#/TABLE BODY#}
 						</div>
 						{#/PAYMENTS TABLE#}
 
