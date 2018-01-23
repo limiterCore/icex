@@ -11,7 +11,16 @@
 		<div class="std-adv__container container">
 			<h1 class="std-adv__title">Welcome back !</h1>
 			<div class="std-adv__content">
-				<div class="std-adv__chart chart-container" id="home-adv-chart"></div>
+				{#CHART#}
+				<div class="chart">
+					<div class="chart__itself chart-container" id="home-adv-chart"></div>
+					<div class="chart__tabs">
+						<a href="#" class="chart__tabs-item chart__tabs-item_active js-chart-tab" data-id="1">Today</a>
+						<a href="#" class="chart__tabs-item js-chart-tab" data-id="2">Month</a>
+						<a href="#" class="chart__tabs-item js-chart-tab" data-id="3">Years</a>
+					</div>
+				</div>
+				{#/CHART#}
 			</div>
 			<p class="std-adv__title std-adv__title_bottom">Countries where your ads have been displayed in December 2017</p>
 		</div>
@@ -48,7 +57,7 @@
 					},
 
 					hAxis: {
-						title: 'Year',
+						title: '',
 						titleTextStyle: {
 							color: '#ffffff'
 						},
@@ -76,9 +85,14 @@
 						// 'width': '90%',
 						'height': '80%',
 						top: 10,
+						bottom: 40,
 						left: 80,
 						right: 80,
 					},
+//					animation:{
+//						duration: 1000,
+//						easing: 'out',
+//					},
 				};
 				// Instantiate and draw our chart, passing in some options.
 				var chart = new google.visualization.AreaChart(document.getElementById('home-adv-chart'));
@@ -110,6 +124,27 @@
 				});
 
 				chart.draw(data, options);
+
+				function tabClick() {
+					var $link = $('.js-chart-tab');
+
+					$link.click(function() {
+						var $t = $(this);
+
+						$link.removeClass('chart__tabs-item_active');
+						$t.addClass('chart__tabs-item_active');
+
+						// Your logics go here
+
+						data.setValue(0, 1, 1200);
+						chart.draw(data, options);
+
+						return false;
+					});
+				}
+
+				tabClick();
+
 			}
 		})();
 	</script>
