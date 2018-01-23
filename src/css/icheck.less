@@ -6,6 +6,17 @@
 	border: 1px solid rgba(255, 255, 255, 0.9);
 	background: rgba(255, 255, 255, 0.2);
 	cursor: pointer;
+	&:after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		.svg-icon(icon-checked, 16px, 12px);
+		margin-top: -6px;
+		margin-left: -8px;
+		display: none;
+		pointer-events: none;
+	}
 	&_small {
 		margin-right: 8px;
 		height: 14px;
@@ -17,22 +28,11 @@
 			top: 50%;
 			left: 50%;
 			.svg-icon(icon-checked, 11px, 8px);
-			margin-top: -2px;
-			margin-left: -1px;
+			margin-top: -4px;
+			margin-left: -5px;
 			display: none;
 			pointer-events: none;
 		}
-	}
-	&:after {
-		content: '';
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		.svg-icon(icon-checked, 16px, 12px);
-		margin-top: -6px;
-		margin-left: -8px;
-		display: none;
-		pointer-events: none;
 	}
 	&.checked {
 		&:after {
