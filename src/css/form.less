@@ -57,6 +57,9 @@
 		&_error {
 			border-color: #ff0000;
 		}
+		&_small {
+			height: 31px;
+		}
 	}
 
 	&__textarea {
@@ -114,6 +117,11 @@
 			border-top-color: white;
 			pointer-events: none;
 		}
+		&_small {
+			&:after {
+				top: 13px;
+			}
+		}
 	}
 	&__select {
 		width: 110%;
@@ -132,6 +140,9 @@
 			background: #1F242D;
 			font-size: @16;
 			padding: 0 22px;
+		}
+		&_small {
+			height: 31px;
 		}
 	}
 	&__submit {
@@ -188,12 +199,35 @@
 	}
 	&__block-checkbox {
 		display: flex;
-		align-items: flex-end;
+		align-items: baseline;
 		margin-bottom: 16px;
 	}
 	&__checkbox-text {
 		font-size: 16px;
 		color: #ffffff;
 		.light();
+	}
+	&__date-select {
+		display: flex;
+		align-items: center;
+		margin-bottom: 18px;
+		.form__select-holder {
+			margin-bottom: 0;
+		}
+		.form__input-holder {
+			margin-bottom: 0;
+		}
+	}
+	&__date {
+		min-width: 100px;
+		font-size: 16px;
+		color: #ffffff;
+		.light();
+	}
+	&__export-block {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 70vh;
 	}
 }
