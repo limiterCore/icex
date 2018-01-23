@@ -1,0 +1,68 @@
+{% extends 'parts/layout-advertisers.twig' %}
+
+{% block title %}
+	<title>Existing orders Advertisers - ICEX Media</title>
+{% endblock %}
+
+
+{% block content %}
+{#EXISTING ORDERS ADVERTISERS#}
+	<div class="std-adv"  style="background-image: url(img/contact-us-bg.jpg)">
+		<div class="std-adv__container container">
+			<h1 class="std-adv__title">Existing Orders</h1>
+			<div class="std-adv__content">
+				{#ADV TABLE#}
+				<div class="adv-table adv-table_existing-orders-adv">
+					<div class="adv-table__wrap">
+						{#ADV TABLE HEAD#}
+						<div class="adv-table__head">
+							<div class="adv-table__column">
+								<p class="adv-table__title">Number</p>
+							</div>
+							<div class="adv-table__column">
+								<p class="adv-table__title">Date</p>
+							</div>
+							<div class="adv-table__column">
+								<p class="adv-table__title">Amount</p>
+							</div>
+							<div class="adv-table__column">
+								<p class="adv-table__title">Status</p>
+							</div>
+							<div class="adv-table__column">
+								<p class="adv-table__title">Type</p>
+							</div>
+							<div class="adv-table__column">
+								<p class="adv-table__title">Payment Link</p>
+							</div>
+							<div class="adv-table__column">
+								<p class="adv-table__title">Invoice</p>
+							</div>
+						</div>
+						{#/ADV TABLE HEAD#}
+
+						{#ADV TABLE BODY#}
+						<div class="adv-table__body">
+							<div class="adv-table__body-inner">
+								{#ROW#}
+								<div class="adv-table__row">
+									<div class="adv-table__column"></div>
+									<div class="adv-table__column"></div>
+									<div class="adv-table__column"></div>
+									<div class="adv-table__column"></div>
+									<div class="adv-table__column"></div>
+									<div class="adv-table__column"></div>
+									<div class="adv-table__column"></div>
+								</div>
+								{#/ROW#}
+							</div>
+						</div>
+						{#/ADV TABLE BODY#}
+					</div>
+				</div>
+				{#/ADV TABLE#}
+			</div>
+		</div>
+	</div>
+{#/EXISTING ORDERS ADVERTISERS#}
+{% endblock %}
+
