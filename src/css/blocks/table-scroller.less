@@ -1,8 +1,9 @@
 .table-scroller {
 	position: absolute;
 	left: 50%;
-	bottom: 14px;
+	bottom: 25px;
 	margin-left: -9px;
+	animation: go-up-down 1.5s infinite linear forwards;
 
 	&__itself {
 		width: 18px;
@@ -54,5 +55,11 @@
 @media screen and (max-width: 768px) {
 	.table-scroller {
 		display: none;
+	}
+}
+
+@keyframes go-up-down {
+	50% {
+		bottom: 14px;
 	}
 }

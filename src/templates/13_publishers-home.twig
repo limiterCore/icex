@@ -1,22 +1,30 @@
-{% extends 'parts/layout-advertisers.twig' %}
+
+{% extends 'parts/layout-publishers.twig' %}
 
 {% block title %}
-	<title>New Add Advertisers - ICEX Media</title>
+	<title>Publishers Home</title>
 {% endblock %}
 
 
 {% block content %}
-{#HOME ADVERTISERS#}
-	<div class="std-adv std-adv_home js-page"  style="background-image: url(img/contact-us-bg.jpg)">
-		<div class="std-adv__container container">
-			<h1 class="std-adv__title">Welcome back !</h1>
-			<div class="std-adv__content">
-				<div class="std-adv__chart" id="home-adv-chart"></div>
+
+	{#PAYMENTS#}
+	<div class="publishers js-page">
+		<div class="publishers__bg" style="background-image: url(img/publish_bg.jpg)">
+			<div class="publishers__bg-darken">
+				<div class="publishers__inner container-publishers">
+					<div class="publishers__block">
+						<h1 class="publishers__title">Welcome back !</h1>
+						{#CHART#}
+						<div class="publishers__chart chart-container" id="home-publishers-chart"></div>
+						{#/CHART#}
+					</div>
+				</div>
 			</div>
-			<p class="std-adv__title std-adv__title_bottom">Countries where your ads have been displayed in December 2017</p>
 		</div>
 	</div>
-{#/HOME ADVERTISERS#}
+	{#/PAYMENTS#}
+
 {% endblock %}
 
 {% block userscripts %}
@@ -81,7 +89,7 @@
 					},
 				};
 				// Instantiate and draw our chart, passing in some options.
-				var chart = new google.visualization.AreaChart(document.getElementById('home-adv-chart'));
+				var chart = new google.visualization.AreaChart(document.getElementById('home-publishers-chart'));
 
 				var createSVG  = function(n,a,b){
 					var xmlns = "http://www.w3.org/2000/svg",
@@ -103,7 +111,7 @@
 							id:'fx'
 						}
 					);
-					document.getElementById('home-adv-chart')
+					document.getElementById('home-publishers-chart')
 						.querySelector('svg>defs').appendChild(gradient);
 					gradient.appendChild(createSVG('stop',{offset:'0%'}));
 					gradient.appendChild(createSVG('stop',{offset:'100%'}));
