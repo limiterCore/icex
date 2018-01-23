@@ -26,6 +26,9 @@
 		.std-adv__title-wrap & {
 			margin-bottom: 10px;
 		}
+		.std-adv_home & {
+			line-height: 1.3;
+		}
 	}
 	&__subtitle {
 		font-size: @16;
@@ -79,12 +82,22 @@
 			}
 		}
 	}
+
+	&__chart {
+		height: 500px;
+		margin-bottom: 76px;
+	}
 }
 
 @media screen and (max-width: 768px) {
 	.std-adv {
-
-
+		padding-top: 40px + 43px;
+		&__container {
+			.std-adv_home & {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
 		&__subtitle {
 			font-size: @12;
 			margin-bottom: 30px;
@@ -123,11 +136,21 @@
 		&__links-item {
 			font-size: @12;
 		}
+
+		&__chart {
+			height: 350px;
+			margin-bottom: 50px;
+		}
 	}
 }
 
 @media screen and (max-width: 500px) {
 	.std-adv {
 		overflow: hidden;
+
+		&__chart {
+			height: 200px;
+			margin-bottom: 30px;
+		}
 	}
 }
