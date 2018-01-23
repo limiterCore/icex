@@ -7,5 +7,6 @@ $(document).ready(function() {
 	//= parts/04.smooth-scroll.js
 	//= parts/05.icheck.js
 	//= parts/06.nav-item-dropdown.js
-	//= parts/07.export.js
+	//= parts/07.input-placeholders-response.js
+	//= parts/08.export.js
 });
