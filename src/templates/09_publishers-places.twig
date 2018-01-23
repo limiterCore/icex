@@ -13,12 +13,14 @@
 		<div class="publishers__bg" style="background-image: url(img/publish_bg.jpg)">
 			<div class="publishers__bg-darken">
 				<div class="publishers__inner container-publishers">
+
+					{#BLOCK#}
 					<div class="publishers__block">
 						<h1 class="publishers__title">Your Places</h1>
 
 						{#YOU PLACES#}
 						<div class="places__table">
-							<div class="places__table-title">
+							<div class="places__table-header">
 								<p class="places__title-item places__title-item_1">#</p>
 								<p class="places__title-item places__title-item_2">Title</p>
 								<p class="places__title-item places__title-item_3">Ad type</p>
@@ -29,7 +31,7 @@
 								<p class="places__title-item places__title-item_8">eCPM</p>
 								<p class="places__title-item places__title-item_9">Options</p>
 							</div>
-							<div class="places__table-block">
+							<div class="places__table-body">
 								<p class="places__item places__item_1"></p>
 								<p class="places__item places__item_2"></p>
 								<p class="places__item places__item_3"></p>
@@ -45,13 +47,16 @@
 						{#/YOU PLACES#}
 
 					</div>
+					{#/BLOCK#}
+
+					{#BLOCK#}
 					<div class="publishers__block">
 						<h2 class="publishers__title">Available Zones</h2>
 
 						{#TABLE#}
 						<div class="publishers__table">
 							{#TABLE HEAD#}
-							<div class="publishers__table-title">
+							<div class="publishers__table-header">
 								<div class="publishers__th">Title</div>
 								<div class="publishers__th">Ad type</div>
 								<div class="publishers__th">Payout</div>
@@ -59,8 +64,8 @@
 							{#/TABLE HEAD#}
 
 							{#TABLE BODY#}
-							<div class="publishers__table-block">
-								<div class="publishers__table-block-inner">
+							<div class="publishers__table-body">
+								<div class="publishers__table-body-inner">
 									<div class="publishers__table-row">
 										<p class="publishers__col publishers__col_1">Zone Banners 468x60 example</p>
 										<p class="publishers__col publishers__col_2">Banners Full Size 468x60</p>
@@ -134,18 +139,23 @@
 										</div>
 									</div>
 								</div>
+
 								{#SCROLLER#}
 								<div class="table-scroller">
 									<div class="table-scroller__itself"></div>
 									<div class="table-scroller__arrow"></div>
 								</div>
 								{#/SCROLLER#}
+
 							</div>
 							{#/TABLE BODY#}
+
 						</div>
 						{#/TABLE#}
 
 					</div>
+					{#/BLOCk#}
+
 				</div>
 			</div>
 		</div>

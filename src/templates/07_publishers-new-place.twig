@@ -9,13 +9,14 @@
 {% block content %}
 
 	{#PUBLISHERS#}
-
 	<div class="publishers js-page">
 		<div class="publishers__bg" style="background-image: url(img/publish_bg.jpg)">
 			<div class="publishers__bg-darken">
 				<div class="publishers__inner container-publishers">
+
+					{#BLOCK#}
 					<div class="publishers__block">
-						<div class="publishers__title">Create a New Place</div>
+						<h1 class="publishers__title">Create a New Place</h1>
 
 						{#FORM#}
 						<div class="publishers__form">
@@ -30,7 +31,7 @@
 											<input type="text" class="form__input js-form-input">
 										</div>
 									</div>
-									<div class="form__input-container {#form__input-container_response#}">
+									<div class="form__input-container">
 										<div class="form__input-text-wrap">
 											<span class="form__input-text">Ad type</span>
 										</div>
@@ -58,13 +59,17 @@
 						{#/FORM#}
 
 					</div>
+					{#/BLOCK#}
+
+					{#BLOCK#}
 					<div class="publishers__block">
-						<div class="publishers__title">Available Zones</div>
+						<h2 class="publishers__title">Available Zones</h2>
 
 						{#TABLE#}
 						<div class="publishers__table">
+
 							{#TABLE HEAD#}
-							<div class="publishers__table-title">
+							<div class="publishers__table-header">
 								<div class="publishers__th">Title</div>
 								<div class="publishers__th">Ad type</div>
 								<div class="publishers__th">Payout</div>
@@ -72,8 +77,8 @@
 							{#/TABLE HEAD#}
 
 							{#TABLE BODY#}
-							<div class="publishers__table-block">
-								<div class="publishers__table-block-inner">
+							<div class="publishers__table-body">
+								<div class="publishers__table-body-inner">
 									<div class="publishers__table-row">
 										<p class="publishers__col publishers__col_1">Zone Banners 468x60 example</p>
 										<p class="publishers__col publishers__col_2">Banners Full Size 468x60</p>
@@ -160,6 +165,8 @@
 						{#/TABLE#}
 
 					</div>
+					{#/BLOCK#}
+
 				</div>
 			</div>
 		</div>
