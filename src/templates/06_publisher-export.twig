@@ -14,106 +14,187 @@
 			<div class="publishers__bg-darken">
 				<div class="publishers__inner container-publishers">
 					<div class="export">
-						<div class="export__title">Export Data to A CSV File</div>
+						<h1 class="export__title">Export Data to A CSV File</h1>
 						<div class="export__form">
-							<div class="form__input-holder">
-								<select class="form__input">
-									<option value="">Overall Statistic</option>
-									<option value="">Day-by-day Statistic</option>
-									<option value="">Month-by-month Statistic</option>
+							<div class="export__form-select-wrap">
+								<div class="form__select-holder">
+								<select class="form__select" id="export-item-select">
+									<option value="1">Overall Statistic</option>
+									<option value="2">Day-by-day Statistic</option>
+									<option value="3">Month-by-month Statistic</option>
 								</select>
 							</div>
-
+							</div>
 							{#OVERALL#}
-							<div class="export__over-all">
-								<div class="form__block-checkbox-wrap">
+							<div class=" form__export-block form__export-block_active js-export-block" id="export-block_1">
+								<div class="form__up-wrap">
 									<div class="form__block-checkbox">
-										<input type="checkbox" class="js-checkbox checkbox-styled checkbox-styled_small">
+										<input type="checkbox" class="js-checkbox-small">
 										<span class="form__checkbox-text">Place number</span>
 									</div>
 									<div class="form__block-checkbox">
-										<input type="checkbox" class="js-checkbox checkbox-styled checkbox-styled_small">
+										<input type="checkbox" class="js-checkbox-small">
 										<span class="form__checkbox-text">Place title</span>
 									</div>
 									<div class="form__block-checkbox">
-										<input type="checkbox" class="js-checkbox checkbox-styled checkbox-styled_small">
+										<input type="checkbox" class="js-checkbox-small">
 										<span class="form__checkbox-text">URL or domain</span>
 									</div>
 									<div class="form__block-checkbox">
-										<input type="checkbox" class="js-checkbox checkbox-styled checkbox-styled_small">
+										<input type="checkbox" class="js-checkbox-small">
 										<span class="form__checkbox-text">Where to track hits (domain, url, all)</span>
 									</div>
 									<div class="form__block-checkbox">
-										<input type="checkbox" class="js-checkbox checkbox-styled checkbox-styled_small">
+										<input type="checkbox" class="js-checkbox-small">
 										<span class="form__checkbox-text">Zone number</span>
 									</div>
 									<div class="form__block-checkbox">
-										<input type="checkbox" class="js-checkbox checkbox-styled checkbox-styled_small">
+										<input type="checkbox" class="js-checkbox-small">
 										<span class="form__checkbox-text">Place approved</span>
 									</div>
 									<div class="form__block-checkbox">
-										<input type="checkbox" class="js-checkbox checkbox-styled checkbox-styled_small">
+										<input type="checkbox" class="js-checkbox-small">
 										<span class="form__checkbox-text">Impressions</span>
 									</div>
 									<div class="form__block-checkbox">
-										<input type="checkbox" class="js-checkbox checkbox-styled checkbox-styled_small">
+										<input type="checkbox" class="js-checkbox-small">
 										<span class="form__checkbox-text">Clicks</span>
 									</div>
 									<div class="form__block-checkbox">
-										<input type="checkbox" class="js-checkbox checkbox-styled checkbox-styled_small">
+										<input type="checkbox" class="js-checkbox-small">
 										<span class="form__checkbox-text">Ratio clicks/impressions</span>
 									</div>
 									<div class="form__block-checkbox">
-							<input type="checkbox" class="js-checkbox checkbox-styled checkbox-styled_small">
-							<span class="form__checkbox-text">Earned</span>
-						</div>
+										<input type="checkbox" class="js-checkbox-small">
+										<span class="form__checkbox-text">Earned</span>
+									</div>
+								</div>
+
+								<div class="form__down-wrap">
+									<button class="btn btn_block">export</button>
 								</div>
 							</div>
 							{#/OVERALL#}
 
 							{#DAY BY DAY#}
-							<div class="export__day-by-day">
-								<div class="form__block-checkbox-wrap">
+							<div class=" form__export-block js-export-block" id="export-block_2">
+
+								<div class="form__up-wrap">
 									<div class="form__block-checkbox">
-										<input type="checkbox" class="js-checkbox checkbox-styled checkbox-styled_small">
+										<input type="checkbox" class="js-checkbox-small">
 										<span class="form__checkbox-text">Place number</span>
 									</div>
 									<div class="form__block-checkbox">
-										<input type="checkbox" class="js-checkbox checkbox-styled checkbox-styled_small">
+										<input type="checkbox" class="js-checkbox-small">
 										<span class="form__checkbox-text">Zone number</span>
 									</div>
 									<div class="form__block-checkbox">
-										<input type="checkbox" class="js-checkbox checkbox-styled checkbox-styled_small">
+										<input type="checkbox" class="js-checkbox-small">
 										<span class="form__checkbox-text">Year</span>
 									</div>
 									<div class="form__block-checkbox">
-										<input type="checkbox" class="js-checkbox checkbox-styled checkbox-styled_small">
+										<input type="checkbox" class="js-checkbox-small">
 										<span class="form__checkbox-text">Month</span>
 									</div>
 									<div class="form__block-checkbox">
-										<input type="checkbox" class="js-checkbox checkbox-styled checkbox-styled_small">
+										<input type="checkbox" class="js-checkbox-small">
 										<span class="form__checkbox-text">Day</span>
 									</div>
 									<div class="form__block-checkbox">
-										<input type="checkbox" class="js-checkbox checkbox-styled checkbox-styled_small">
+										<input type="checkbox" class="js-checkbox-small">
 										<span class="form__checkbox-text">Impressions</span>
 									</div>
 									<div class="form__block-checkbox">
-									<input type="checkbox" class="js-checkbox checkbox-styled checkbox-styled_small">
-									<span class="form__checkbox-text">Clicks</span>
-								</div>
+										<input type="checkbox" class="js-checkbox-small">
+										<span class="form__checkbox-text">Clicks</span>
+									</div>
 								</div>
 
-								<div class="form__date-selector-wrap">
-									<div class="form__date-selector">
-										<div class="form__date"></div>
+								<div class="form__down-wrap">
+									<div class="form__date-select-wrap">
+										<div class="form__date-select">
+											<div class="form__date">Month:</div>
+											<div class="form__select-holder form__select-holder_small">
+												<select class="form__select form__select_small">
+													<option>January</option>
+													<option>February</option>
+													<option>March</option>
+													<option>April</option>
+													<option>May</option>
+													<option>June</option>
+													<option>July</option>
+													<option>August</option>
+													<option>September</option>
+													<option>October</option>
+													<option>November</option>
+													<option>December</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="form__date-select">
+											<div class="form__date">Year:</div>
+											<div class="form__input-holder">
+												<input type="text" class="form__input form__input_small">
+											</div>
+										</div>
 									</div>
-									<div class="form__date-selector"></div>
+									<button class="btn btn_block">export</button>
 								</div>
+
 							</div>
 							{#/DAY BY DAY#}
 
-							<button class="btn btn_block">export</button>
+							{#MONTH BY MONTH#}
+							<div class=" form__export-block js-export-block" id="export-block_3">
+
+								<div class="form__up-wrap">
+									<div class="form__block-checkbox">
+										<input type="checkbox" class="js-checkbox-small">
+										<span class="form__checkbox-text">Place number</span>
+									</div>
+									<div class="form__block-checkbox">
+										<input type="checkbox" class="js-checkbox-small">
+										<span class="form__checkbox-text">Zone number</span>
+									</div>
+									<div class="form__block-checkbox">
+										<input type="checkbox" class="js-checkbox-small">
+										<span class="form__checkbox-text">Year</span>
+									</div>
+									<div class="form__block-checkbox">
+										<input type="checkbox" class="js-checkbox-small">
+										<span class="form__checkbox-text">Month</span>
+									</div>
+									<div class="form__block-checkbox">
+										<input type="checkbox" class="js-checkbox-small">
+										<span class="form__checkbox-text">Impressions</span>
+									</div>
+									<div class="form__block-checkbox">
+										<input type="checkbox" class="js-checkbox-small">
+										<span class="form__checkbox-text">Clicks</span>
+									</div>
+									<div class="form__block-checkbox">
+										<input type="checkbox" class="js-checkbox-small">
+										<span class="form__checkbox-text">Ratio clicks/impressions</span>
+									</div>
+								</div>
+
+								<div class="form__down-wrap">
+									<div class="form__date-select-wrap">
+
+										<div class="form__date-select">
+											<div class="form__date">Year:</div>
+											<div class="form__input-holder">
+												<input type="text" class="form__input form__input_small">
+											</div>
+										</div>
+									</div>
+									<button class="btn btn_block">export</button>
+								</div>
+
+							</div>
+							{#/MONTH BY MONTH#}
+
 						</div>
 					</div>
 				</div>

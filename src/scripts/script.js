@@ -8,4 +8,5 @@ $(document).ready(function() {
 	//= parts/05.icheck.js
 	//= parts/06.nav-item-dropdown.js
 	//= parts/07.input-placeholders-response.js
+	//= parts/08.export.js
 });
