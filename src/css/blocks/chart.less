@@ -10,3 +10,55 @@
 #fx stop:nth-child(2){
 	stop-color: rgba(255,255,255,.5);
 }
+
+.chart {
+
+	&__itself {
+		height: 500px;
+	}
+	&__tabs {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 76px;
+		margin-top: 40px;
+	}
+	&__tabs-item {
+		text-decoration: none;
+		font-size: @16;
+		.regular();
+		color: white;
+		margin-right: 30px;
+		transition: all .3s ease;
+		.no-touchevents & {
+			&:hover {
+				color: @turquoise-color;
+				filter: drop-shadow(0 0 4px @turquoise-color);
+			}
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		&_active {
+			color: #00c9b3;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.chart {
+		margin-bottom: 50px;
+
+		&__itself {
+			height: 350px;
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.chart {
+		&__itself {
+			height: 200px;
+		}
+	}
+}
