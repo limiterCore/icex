@@ -256,7 +256,27 @@
 		margin-right: 10px;
 		width: 14px;
 		height: 14px;
-		background: #00c9b3;
+		position: relative;
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin-left: -2px;
+			width: 4px;
+			height: 14px;
+			background: #00c9b3;
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			margin-top: -2px;
+			left: 0;
+			width: 14px;
+			height: 4px;
+			background: #00c9b3;
+		}
 	}
 	&__add-new-text {
 		color: #00c9b3;
