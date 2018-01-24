@@ -1,0 +1,391 @@
+.adv-table {
+
+	&__wrap {
+		margin-bottom: 27px;
+	}
+	&__head {
+		margin-bottom: 29px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__body {
+		//height: 482px;
+		border: 2px solid rgba(255, 255, 255, 0.9);
+		overflow: hidden;
+		padding: 20px 0 42px 0;
+		position: relative;
+	}
+	&__body-inner {
+		overflow: auto;
+		overflow-x: hidden;
+		margin-right: -20px;
+		max-height: 380px;
+	}
+	&__column {
+
+		.adv-table_ads-adv & {
+			&:first-child {
+				width: 5%;
+				padding-left: 15px;
+			}
+			&:nth-child(2) {
+				width: 15%;
+				text-align: left;
+			}
+			&:nth-child(3) {
+				width: 15%;
+				text-align: left;
+			}
+			&:nth-child(4) {
+				width: 15%;
+				text-align: center;
+			}
+			&:nth-child(5) {
+				width: 15%;
+				text-align: center;
+			}
+			&:nth-child(6) {
+				width: 15%;
+				text-align: center;
+			}
+			&:last-child {
+				width: 20%;
+				text-align: right;
+				padding-right: 61px;
+			}
+		}
+		.adv-table_campaigns-adv & {
+			&:first-child {
+				width: 4%;
+				padding-left: 15px;
+			}
+			&:nth-child(2) {
+				width: 10%;
+				text-align: left;
+			}
+			&:nth-child(3) {
+				width: 15%;
+				text-align: left;
+			}
+			&:nth-child(4) {
+				width: 8%;
+				text-align: center;
+			}
+			&:nth-child(5) {
+				width: 8%;
+				text-align: center;
+			}
+			&:nth-child(6) {
+				width: 8%;
+				text-align: center;
+			}
+			&:nth-child(7) {
+				width: 8%;
+				text-align: center;
+			}
+			&:nth-child(8) {
+				width: 8%;
+				text-align: center;
+			}
+			&:nth-child(9) {
+				width: 8%;
+				text-align: center;
+			}
+			&:nth-child(10) {
+				width: 8%;
+				text-align: center;
+			}
+			&:last-child {
+				width: 15%;
+				text-align: right;
+				padding-right: 37px;
+			}
+		}
+		.adv-table_existing-orders-adv & {
+			text-align: center;
+			&:first-child {
+				width: 14%;
+			}
+			&:nth-child(2) {
+				width: 14%;
+			}
+			&:nth-child(3) {
+				width: 14%;
+			}
+			&:nth-child(4) {
+				width: 14%;
+			}
+			&:nth-child(5) {
+				width: 14%;
+			}
+			&:nth-child(6) {
+				width: 16%;
+			}
+			&:last-child {
+				width: 14%;
+			}
+		}
+	}
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 27px;
+	}
+	&__title {
+		font-size: @14;
+		.medium();
+		color: white;
+	}
+	&__text {
+		font-size: @14;
+		.light();
+		color: white;
+		&_red {
+			color: #ba1913;
+		}
+	}
+	&__icon {
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 20px;
+		&:last-child {
+			margin-right: 0;
+		}
+		&_graphic {
+			.svg-icon(icon-graphic, 19px, 17px);
+		}
+		&_edit {
+			.svg-icon(icon-graphic, 19px, 19px);
+		}
+	}
+
+	&__link-wrap {
+
+	}
+	&__link {
+		color: #00c9b3;
+		font-size: @16;
+		text-decoration: none;
+		.regular();
+		transition: all .3s ease;
+		.no-touchevents & {
+			&:hover {
+				filter: drop-shadow(0 0 4px @turquoise-color);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.adv-table {
+
+		&__wrap {
+			display: flex;
+		}
+		&__head {
+			flex-direction: column;
+			width: 30%;
+			min-width: 30%;
+			padding-top: 10px;
+		}
+		&__body {
+			width: 70%;
+			min-width: 70%;
+			padding: 10px 14px;
+			.adv-table_ads-adv & {
+				//height: 800px;
+			}
+		}
+		&__body-inner {
+			overflow: auto;
+			overflow-y: hidden;
+			margin-right: 0;
+			margin-bottom: -20px;
+			max-height: none;
+			display: flex;
+		}
+		&__column {
+			margin-right: 30px;
+			margin-bottom: 20px;
+			min-height: 50px;
+			.adv-table_ads-adv & {
+				&:first-child {
+					width: auto;
+					min-width: 50px;
+					//height: 5%;
+					padding-left: 0;
+				}
+				&:nth-child(2) {
+					width: auto;
+					min-width: 50px;
+					//height: 15%;
+				}
+				&:nth-child(3) {
+					width: auto;
+					min-width: 50px;
+					//height: 15%;
+				}
+				&:nth-child(4) {
+					width: auto;
+					min-width: 50px;
+					//height: 15%;
+					text-align: left;
+				}
+				&:nth-child(5) {
+					width: auto;
+					min-width: 50px;
+					//height: 15%;
+					text-align: left;
+
+				}
+				&:nth-child(6) {
+					width: auto;
+					min-width: 50px;
+					//height: 15%;
+					text-align: left;
+
+				}
+				&:last-child {
+					width: auto;
+					min-width: 50px;
+					//height: 20%;
+					text-align: left;
+					padding-right: 0;
+				}
+			}
+			.adv-table_campaigns-adv & {
+				&:first-child {
+					width: auto;
+					min-width: 50px;
+					padding-left: 0;
+				}
+				&:nth-child(2) {
+					width: auto;
+					min-width: 50px;
+				}
+				&:nth-child(3) {
+					width: auto;
+					min-width: 50px;
+					text-align: left;
+				}
+				&:nth-child(4) {
+					width: auto;
+					min-width: 50px;
+					text-align: left;
+				}
+				&:nth-child(5) {
+					width: auto;
+					min-width: 50px;
+					text-align: left;
+				}
+				&:nth-child(6) {
+					width: auto;
+					min-width: 50px;
+					text-align: left;
+				}
+				&:nth-child(7) {
+					width: auto;
+					min-width: 50px;
+					text-align: left;
+				}
+				&:nth-child(8) {
+					width: auto;
+					min-width: 50px;
+					text-align: left;
+				}
+				&:nth-child(9) {
+					width: auto;
+					min-width: 50px;
+					text-align: left;
+				}
+				&:nth-child(10) {
+					width: auto;
+					min-width: 50px;
+					text-align: left;
+				}
+				&:last-child {
+					width: auto;
+					min-width: 50px;
+					padding-right: 0;
+				}
+			}
+			.adv-table_existing-orders-adv & {
+				text-align: center;
+				&:first-child {
+					width: auto;
+					min-width: 50px;
+				}
+				&:nth-child(2) {
+					width: auto;
+					min-width: 50px;
+				}
+				&:nth-child(3) {
+					width: auto;
+					min-width: 50px;
+				}
+				&:nth-child(4) {
+					width: auto;
+					min-width: 50px;
+				}
+				&:nth-child(5) {
+					width: auto;
+					min-width: 50px;
+				}
+				&:nth-child(6) {
+					width: auto;
+					min-width: 50px;
+				}
+				&:last-child {
+					width: auto;
+					min-width: 50px;
+				}
+			}
+		}
+		&__row {
+			flex-direction: column;
+			.adv-table_ads-adv & {
+				//height: 800px;
+			}
+		}
+		&__text {
+			text-align: center;
+		}
+		&__icon {
+			margin-right: 10px;
+			&_graphic {
+				.svg-icon(icon-graphic, 14px, 12px);
+			}
+			&_edit {
+				.svg-icon(icon-edit, 14px, 14px);
+			}
+		}
+
+		&__link-wrap {
+			display: flex;
+			justify-content: center;
+		}
+		&__link {
+			font-size: @12;
+		}
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+	.adv-table {
+		&__text {
+			font-size: @12;
+		}
+		&__title {
+			font-size: @12;
+		}
+		&__head {
+			width: 40%;
+			min-width: 40%;
+		}
+		&__body {
+			width: calc(~"60% + 25px");
+			min-width: calc(~"60% + 25px");
+		}
+	}
+}

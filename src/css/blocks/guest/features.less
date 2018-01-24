@@ -1,12 +1,16 @@
 .features {
-	padding-bottom: 110px;
 
 	&__container {
-		max-width: 1560px + 40px;
-		padding-left: 20px;
-		padding-right: 20px;
-		margin-left: auto;
-		margin-right: auto;
+		.guest-home__features & {
+			max-width: 1560px + 40px;
+			padding-left: 20px;
+			padding-right: 20px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	&__list {
+
 	}
 	&__slider {
 
@@ -14,6 +18,18 @@
 	&__slider-wrap {
 		margin-bottom: 25px;
 		padding-top: 110px;
+		.features__list & {
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+			.swiper-slide  {
+				width: calc(~"(100% - 41px * 3) / 4");
+				margin-right: 41px;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
 	}
 	&__slider-item {
 
@@ -42,6 +58,12 @@
 			opacity: 1;
 			transform: translateY(0);
 		}
+		.features__list & {
+			margin-right: 41px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
 	}
 	&__slider-item-icon {
 		margin-left: auto;
@@ -59,6 +81,30 @@
 		}
 		&_cryptocurrency {
 			.svg-icon(icon-features-4, 178px, 178px);
+		}
+		&_integrated-marketing {
+			.svg-icon(icon-features-5, 178px, 178px);
+		}
+		&_integrated-marketing {
+			.svg-icon(icon-features-7, 178px, 178px);
+		}
+		&_optimisation {
+			.svg-icon(icon-features-6, 178px, 178px);
+		}
+		&_any-format {
+			.svg-icon(icon-features-5, 178px, 178px);
+		}
+		&_cost {
+			.svg-icon(icon-features-8, 178px, 178px);
+		}
+		&_yield-management {
+			.svg-icon(icon-features-9, 178px, 178px);
+		}
+		&_creative-optimization {
+			.svg-icon(icon-features-10, 178px, 178px);
+		}
+		&_performance {
+			.svg-icon(icon-features-11, 178px, 178px);
 		}
 	}
 	&__slider-item-title {
@@ -120,6 +166,25 @@
 			opacity: 1;
 			transform: translateY(0);
 
+		}
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.features {
+		&__slider-wrap {
+			.features__list & {
+				display: flex;
+				align-items: flex-start;
+				justify-content: flex-start;
+				.swiper-slide  {
+					width: 100%;
+					margin-right: 0;
+					&:last-child {
+						margin-right: 0;
+					}
+				}
+			}
 		}
 	}
 }

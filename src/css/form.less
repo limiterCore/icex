@@ -1,52 +1,77 @@
 .form {
+
+	&__input-container {
+		display: flex;
+		margin-bottom: 18px;
+		.form__input-holder {
+			margin-bottom: 0;
+		}
+		.form__select-holder {
+			margin-bottom: 0;
+		}
+	}
+
 	&__input-holder {
-		margin-bottom: 15px;
+		margin-bottom: 18px;
+		width: 100%;
+		&_mini {
+			width: 301px;
+			margin-right: 178px;
+		}
+		&_check {
+			text-align: right;
+			width: 28px;
+			display: inline-block;
+			padding-bottom: 8px;
+		}
 	}
 	&__input {
 		display: block;
 		width: 100%;
-		height: 35px;
-		background: #383542;
-		border-radius: 3px;
-		border: 1px solid transparent;
-		padding: 0 20px;
+		height: 61px;
+		border: 1px solid rgba(255, 255, 255, 0.9);
+		background: rgba(255, 255, 255, 0.2);
+		padding: 0 22px;
 
 		color: white;
 		.regular();
-		font-size: @14;
+		font-size: @16;
 		-webkit-appearance: none;
+
 		&::-webkit-input-placeholder {
-			color: white;
+			color: rgba(255, 255, 255, 0.5);
 			opacity: 1;
 		}
 		&::-moz-placeholder {
-			color: white;
+			color: rgba(255, 255, 255, 0.5);
 			opacity: 1;
 		}
 		&:-moz-placeholder {
-			color: white;
+			color: rgba(255, 255, 255, 0.5);
 			opacity: 1;
 		}
 		&:-ms-input-placeholder {
-			color: white;
+			color: rgba(255, 255, 255, 0.5);
 			opacity: 1;
 		}
 		&:focus {
-			border-color: black;
-			color: white;
-
+			border-color: @turquoise-color;
 		}
 		&_error {
 			border-color: #ff0000;
 		}
+		&_small {
+			height: 31px;
+			padding: 0 15px;
+		}
 	}
+
 	&__textarea {
 		display: block;
 		width: 100%;
 		height: 225px;
-		background: #383542;
-		border-radius: 3px;
-		border: 1px solid transparent;
+		border: 1px solid rgba(255, 255, 255, 0.9);
+		background: rgba(255, 255, 255, 0.2);
 		padding: 10px 20px;
 
 		color: white;
@@ -54,49 +79,259 @@
 		font-size: @14;
 		-webkit-appearance: none;
 
+		&_publishers {
+			height: 181px;
+		}
 		&::-webkit-input-placeholder {
-			color: white;
+			color: rgba(255, 255, 255, 0.5);
 			opacity: 1;
 		}
 		&::-moz-placeholder {
-			color: white;
+			color: rgba(255, 255, 255, 0.5);
 			opacity: 1;
 		}
 		&:-moz-placeholder {
-			color: white;
+			color: rgba(255, 255, 255, 0.5);
 			opacity: 1;
 		}
 		&:-ms-input-placeholder {
-			color: white;
+			color: rgba(255, 255, 255, 0.5);
 			opacity: 1;
 		}
 		&:focus {
-			border-color: black;
-			color: white;
+			border-color: @turquoise-color;
 		}
 		&_error {
 			border-color: #ff0000;
 		}
 	}
 
-	&__captcha {
-		margin: 10px 0;
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-end;
-		max-width: 100%;
+	&__select-holder {
+		width: 100%;
+		overflow: hidden;
+		margin-bottom: 20px;
+		border: 1px solid rgba(255, 255, 255, 0.9);
+		position: relative;
+		&:after {
+			position: absolute;
+			top: 28px;
+			right: 15px;
+			content: '';
+			border: 5px solid transparent;
+			border-top-color: white;
+			pointer-events: none;
+		}
+		&_small {
+			&:after {
+				top: 13px;
+			}
+		}
+	}
+	&__select {
+		width: 110%;
+		height: 61px;
+		border: 0;
+		-webkit-appearance: none;
+		outline: none;
+		padding: 0 22px;
+		background: rgba(255, 255, 255, 0.2);
+
+		color: white;
+		font-size: @16;
+		.regular();
+
+		option {
+			background: #1F242D;
+			font-size: inherit;
+			padding: 0 22px;
+		}
+		&_small {
+			height: 31px;
+			padding: 0 15px;
+		}
 	}
 	&__submit {
 		text-align: right;
 	}
+
+	&__submit-container {
+		display: flex;
+		justify-content: flex-end;
+	}
+	&__submit-holder {
+		width: calc(~"100% - 174px");
+		&_account {
+			width: calc(~"100% - 232px");
+		}
+	}
+
+	&__input-text-wrap {
+		min-width: 174px;
+		padding-top: 8px;
+		position: relative;
+		&_account {
+			min-width: 232px;
+			max-width: 232px;
+		}
+	}
+	&__input-text {
+		display: inline-block;
+		margin-bottom: 4px;
+		font-size: @16;
+		color: #ffffff;
+		.light();
+		&_required {
+			position: relative;
+			&:after {
+				position: absolute;
+				content: '*';
+				right: -10px;
+				top: 3px;
+				color: #AF1712;
+				.light();
+				font-size: @18;
+			}
+		}
+	}
+	&__input-under-text {
+		color: #8c9398;
+		.light();
+		font-size: @14;
+		padding-right: 69px;
+		line-height: 1.1;
+	}
+	&__input-select-option {
+		color: white;
+		.regular();
+		font-size: @16;
+		background-color: #797D81;
+	}
+	&__input-wrap {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	&__block {
+		display: flex;
+		align-items: center;
+	}
+	&__block-checkbox {
+		display: flex;
+		align-items: baseline;
+		margin-bottom: 16px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__checkbox-text {
+		font-size: @16;
+		color: #ffffff;
+		.light();
+	}
+	&__date-select {
+		display: flex;
+		align-items: center;
+		margin-bottom: 18px;
+		.form__select-holder {
+			margin-bottom: 0;
+		}
+		.form__input-holder {
+			margin-bottom: 0;
+		}
+	}
+	&__date {
+		min-width: 100px;
+		font-size: 16px;
+		color: #ffffff;
+		.light();
+		text-align: left;
+	}
+	&__export-block {
+		display: none;
+		flex-direction: column;
+		justify-content: space-between;
+		min-height: 410px;
+		&_active {
+			display: flex;
+		}
+	}
+	&__down-wrap {
+		text-align: center;
+	}
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 1100px) {
 	.form {
-		&__captcha {
-			&_mobile {
+		&__input-holder {
+			&_mini {
+				width: 45%;
+				margin-right: 30px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.form {
+
+		&__input-container {
+			&_response {
 				display: block;
 			}
 		}
+		&__input-text-wrap {
+			display: none;
+			.form__input-container_response & {
+				display: block;
+				width: 100%;
+				min-width: 100%;
+				max-width: 100%;
+				margin-bottom: 20px;
+			}
+		}
+		&__input-holder {
+			&_mini {
+				width: 100%;
+				margin-right: 0;
+				margin-bottom: 28px !important;
+			}
+		}
+		&__input {
+			height: 40px;
+			padding: 0 12px;
+		}
+		&__input-wrap {
+			width: 100%;
+		}
+		&__select-holder {
+			margin-bottom: 14px;
+			&:after {
+				top: 18px;
+			}
+		}
+		&__select {
+			height: 41px;
+			padding: 0 70px 0 12px;
+			font-size: @14;
+		}
+
+		&__submit-container {
+			justify-content: center;
+		}
+		&__submit-holder {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			&_account {
+				width: 100%;
+			}
+		}
+		&__checkbox-text {
+			font-size: @14;
+		}
+		&__date {
+			display: none;
+		}
+
 	}
 }

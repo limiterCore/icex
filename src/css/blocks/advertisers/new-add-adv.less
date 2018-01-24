@@ -1,0 +1,39 @@
+.new-add-adv {
+	padding-top: 40px;
+	padding-bottom: 109px;
+
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.7);
+		z-index: 10;
+	}
+	&__container {
+		position: relative;
+		z-index: 20;
+	}
+	&__title {
+		.guest-title();
+		margin-bottom: 41px;
+		text-align: center;
+	}
+	&__content {
+		padding-left: 57px;
+		padding-right: 85px;
+
+		.guest-form__input-holder {
+			width: calc(~"100% - 180px");
+		}
+		.guest-form__submit-holder {
+			width: calc(~"100% - 180px");
+		}
+	}
+}

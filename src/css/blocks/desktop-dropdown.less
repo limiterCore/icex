@@ -1,0 +1,34 @@
+.desktop-dropdown {
+	position: absolute;
+	top: 20px;
+	right: 0;
+	padding: 14px 20px;
+	min-width: 143px;
+	background: rgba(0, 0, 0, 0.51);
+	display: none;
+	z-index: 100;
+	border: 1px solid black;
+	cursor: default;
+
+	&__link-wrap {
+		margin-bottom: 20px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__link {
+		color: white;
+		text-decoration: none;
+		font-size: @14;
+		.regular();
+		transition: all .3s ease;
+		white-space: nowrap;
+
+		.no-touchevents & {
+			&:hover {
+				color: @turquoise-color;
+				filter: drop-shadow(0 0 4px @turquoise-color);
+			}
+		}
+	}
+}

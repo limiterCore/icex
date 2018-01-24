@@ -1,0 +1,44 @@
+.up-arrow {
+
+	display: none;
+	width: 52px;
+	height: 52px;
+	border-radius: 50%;
+	background-color: rgba(47, 154, 146, 0.62);
+	z-index: 50;
+	position: fixed;
+	bottom: 96px;
+	right: 50px;
+	cursor: pointer;
+	transition: all 0.5s ease-out ;
+	&:hover {
+		background: @turquoise-color;
+		filter: drop-shadow(0 0 4px @turquoise-color);
+	}
+	&:before {
+		position: absolute;
+		content: '';
+		width: 14px;
+		height: 6px;
+		transform: rotate(-45deg);
+		top: 22px;
+		left: 16px;
+		background-color: white;
+	}
+	&:after {
+		position: absolute;
+		content: '';
+		width: 14px;
+		height: 6px;
+		transform: rotate(45deg);
+		top: 22px;
+		right: 16px;
+		background-color: white;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.up-arrow {
+		display: none;
+	}
+}

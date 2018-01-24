@@ -1,0 +1,30 @@
+.export {
+	flex-grow: 20;
+	max-width: 330px;
+	margin-right: auto;
+	margin-left: auto;
+
+	&__title {
+		.medium();
+		font-size: @26;
+		text-align: center;
+		color: #ffffff;
+		margin-bottom: 63px;
+		white-space: nowrap;
+	}
+	&__form-select-wrap {
+		margin-bottom: 40px;
+		.form__select-holder {
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.export {
+		&__title {
+			font-size: @16;
+			margin-bottom: 20px;
+		}
+	}
+}

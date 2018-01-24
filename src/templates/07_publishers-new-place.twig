@@ -1,0 +1,176 @@
+
+{% extends 'parts/layout-publishers.twig' %}
+
+{% block title %}
+	<title>Publisher New Place</title>
+{% endblock %}
+
+
+{% block content %}
+
+	{#PUBLISHERS#}
+	<div class="publishers js-page">
+		<div class="publishers__bg" style="background-image: url(img/publish_bg.jpg)">
+			<div class="publishers__bg-darken">
+				<div class="publishers__inner container-publishers">
+
+					{#BLOCK#}
+					<div class="publishers__block">
+						<h1 class="publishers__title">Create a New Place</h1>
+
+						{#FORM#}
+						<div class="publishers__form">
+							<div class="form">
+								<form>
+									<div class="form__input-container js-form-input-container">
+										<div class="form__input-text-wrap">
+											<p class="form__input-text js-input-text">Title</p>
+											<p class="form__input-under-text">for your reference</p>
+										</div>
+										<div class="form__input-holder">
+											<input type="text" class="form__input js-form-input">
+										</div>
+									</div>
+									<div class="form__input-container">
+										<div class="form__input-text-wrap">
+											<span class="form__input-text">Ad type</span>
+										</div>
+										<div class="form__select-holder">
+											<select class="form__select">
+												<option value="1">Banners Full Size 468x60</option>
+												<option value="2">Banners Full Size 468x60</option>
+												<option value="3">Banners Full Size 468x60</option>
+												<option value="4">Banners Full Size 468x60</option>
+											</select>
+										</div>
+									</div>
+									<div class="form__input-container">
+										<div class="form__input-text-wrap">
+											<span class="form__input-text"></span>
+										</div>
+										<div class="form__submit-holder">
+											<button type="submit" class="form__submit btn">submit</button>
+										</div>
+									</div>
+
+								</form>
+							</div>
+						</div>
+						{#/FORM#}
+
+					</div>
+					{#/BLOCK#}
+
+					{#BLOCK#}
+					<div class="publishers__block">
+						<h2 class="publishers__title">Available Zones</h2>
+
+						{#TABLE#}
+						<div class="publishers__table">
+
+							{#TABLE HEAD#}
+							<div class="publishers__table-header">
+								<div class="publishers__th">Title</div>
+								<div class="publishers__th">Ad type</div>
+								<div class="publishers__th">Payout</div>
+							</div>
+							{#/TABLE HEAD#}
+
+							{#TABLE BODY#}
+							<div class="publishers__table-body">
+								<div class="publishers__table-body-inner">
+									<div class="publishers__table-row">
+										<p class="publishers__col publishers__col_1">Zone Banners 468x60 example</p>
+										<p class="publishers__col publishers__col_2">Banners Full Size 468x60</p>
+										<div class="publishers__col publishers__col_3">
+											<p class="publishers__col publishers__col_4">$0.60/10 clicks </p>
+											<p class="publishers__col publishers__col_5">$0.60/500 impressions</p>
+										</div>
+									</div>
+									<div class="publishers__table-row">
+										<p class="publishers__col publishers__col_1">Zone Banners 468x60 example</p>
+										<p class="publishers__col publishers__col_2">Banners Half Size 234x60</p>
+										<div class="publishers__col publishers__col_3">
+											<p class="publishers__col publishers__col_4">$0.60/10 clicks </p>
+											<p class="publishers__col publishers__col_5">$0.60/500 impressions</p>
+										</div>
+									</div>
+									<div class="publishers__table-row">
+										<p class="publishers__col publishers__col_1">Zone Banners 468x60 example</p>
+										<p class="publishers__col publishers__col_2">Banners Vertical 120x240</p>
+										<div class="publishers__col publishers__col_3">
+											<p class="publishers__col publishers__col_4">$0.60/10 clicks </p>
+											<p class="publishers__col publishers__col_5">$0.60/500 impressions</p>
+										</div>
+									</div>
+									<div class="publishers__table-row">
+										<p class="publishers__col publishers__col_1">Zone Banners 468x60 example</p>
+										<p class="publishers__col publishers__col_2">Banners Vertical Tower 160x600</p>
+										<div class="publishers__col publishers__col_3">
+											<p class="publishers__col publishers__col_4">$0.60/10 clicks </p>
+											<p class="publishers__col publishers__col_5">$0.60/500 impressions</p>
+										</div>
+									</div>
+									<div class="publishers__table-row">
+										<p class="publishers__col publishers__col_1">Zone Banners 468x60 example</p>
+										<p class="publishers__col publishers__col_2">Button 120x90</p>
+										<div class="publishers__col publishers__col_3">
+											<p class="publishers__col publishers__col_4">$0.60/10 clicks </p>
+											<p class="publishers__col publishers__col_5">$0.60/500 impressions</p>
+										</div>
+									</div>
+									<div class="publishers__table-row">
+										<p class="publishers__col publishers__col_1">Zone Banners 468x60 example</p>
+										<p class="publishers__col publishers__col_2">Button 88x31</p>
+										<div class="publishers__col publishers__col_3">
+											<p class="publishers__col publishers__col_4">$0.60/10 clicks </p>
+											<p class="publishers__col publishers__col_5">$0.60/500 impressions</p>
+										</div>
+									</div>
+									<div class="publishers__table-row">
+										<p class="publishers__col publishers__col_1">Zone Banners 468x60 example</p>
+										<p class="publishers__col publishers__col_2">Complete Page 800x600</p>
+										<div class="publishers__col publishers__col_3">
+											<p class="publishers__col publishers__col_4">$0.60/10 clicks </p>
+											<p class="publishers__col publishers__col_5">$0.60/500 impressions</p>
+										</div>
+									</div>
+									<div class="publishers__table-row">
+										<p class="publishers__col publishers__col_1">Zone Banners 468x60 example</p>
+										<p class="publishers__col publishers__col_2">Facebook style ads</p>
+										<div class="publishers__col publishers__col_3">
+											<p class="publishers__col publishers__col_4">$0.60/10 clicks </p>
+											<p class="publishers__col publishers__col_5">$0.60/500 impressions</p>
+										</div>
+									</div>
+									<div class="publishers__table-row">
+										<p class="publishers__col publishers__col_1">Zone Banners 468x60 example</p>
+										<p class="publishers__col publishers__col_2">Banners Full Size 468x60</p>
+										<div class="publishers__col publishers__col_3">
+											<p class="publishers__col publishers__col_4">$0.60/10 clicks </p>
+											<p class="publishers__col publishers__col_5">$0.60/500 impressions</p>
+										</div>
+									</div>
+								</div>
+
+								{#SCROLLER#}
+								<div class="table-scroller">
+									<div class="table-scroller__itself"></div>
+									<div class="table-scroller__arrow"></div>
+								</div>
+								{#/SCROLLER#}
+							</div>
+							{#/TABLE BODY#}
+						</div>
+						{#/TABLE#}
+
+					</div>
+					{#/BLOCK#}
+
+				</div>
+			</div>
+		</div>
+	</div>
+	{#/PUBLISHERS#}
+
+{% endblock %}

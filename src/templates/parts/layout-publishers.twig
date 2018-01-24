@@ -15,16 +15,21 @@
 
 <body>
 
-<div class="all-wrap">
+<div class="all-wrap" id="all-wrap">
 	{% block header %}
-		{% include 'parts/header.twig' %}
+		{% include 'parts/header-publishers.twig' %}
 	{% endblock %}
 
 	{% block content %}
 	{% endblock %}
 
 	{% block footer %}
-		{% include 'parts/footer.twig' %}
+		{% include 'parts/footer-publishers.twig' %}
+	{% endblock %}
+
+	<div class="up-arrow" id="up-arrow"></div>
+
+	{% block userscripts %}
 	{% endblock %}
 </div>
 

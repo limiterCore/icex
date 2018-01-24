@@ -1,0 +1,65 @@
+.table-scroller {
+	position: absolute;
+	left: 50%;
+	bottom: 25px;
+	margin-left: -9px;
+	animation: go-up-down 1.5s infinite linear forwards;
+
+	&__itself {
+		width: 18px;
+		height: 30px;
+		border-radius: 20px;
+		border: 2px solid @turquoise-color;
+		position: relative;
+		margin-bottom: 5px;
+		&:after {
+			content: '';
+			position: absolute;
+			top: 8px;
+			left: 50%;
+			margin-left: -1px;
+			width: 2px;
+			height: 6px;
+			background: @turquoise-color;
+		}
+	}
+	&__arrow {
+		position: relative;
+		width: 12px;
+		height: 7px;
+		margin-left: auto;
+		margin-right: auto;
+		&:after {
+			content: '';
+			position: absolute;
+			transform: rotate(-45deg);
+			background: @turquoise-color;
+			width: 2px;
+			height: 10px;
+			left: 2px;
+			top: -1px;
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			transform: rotate(45deg);
+			background: @turquoise-color;
+			width: 2px;
+			height: 10px;
+			right: 2px;
+			top: -1px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.table-scroller {
+		display: none;
+	}
+}
+
+@keyframes go-up-down {
+	50% {
+		bottom: 14px;
+	}
+}
