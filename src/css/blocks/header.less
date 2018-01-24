@@ -397,10 +397,18 @@
 			z-index: 30;
 			position: fixed;
 			width: 100%;
+			&.mobile-menu-open {
+				height: 100vh;
+				overflow-y: auto;
+			}
 		}
 
 		&__burger {
 			display: block;
+			.header_grey & {
+				top: 12px;
+				margin-top: 0;
+			}
 		}
 		&__logo {
 			.header_grey & {
