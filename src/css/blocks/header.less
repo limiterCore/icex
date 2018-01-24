@@ -151,14 +151,17 @@
 	}
 
 	&__login {
-		display: flex;
-		align-items: center;
-		justify-content: flex-end;
 		text-decoration: none;
 		position: relative;
 		cursor: pointer;
 	}
+	&__login-toggle {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
 	&__login-icon {
+		min-width: 10px;
 		.svg-icon(icon-login, 10px, 14px);
 		margin-right: 11px;
 		transition: all .3s ease;
@@ -259,6 +262,7 @@
 	}
 	&__add-new-icon {
 		margin-right: 10px;
+		min-width: 14px;
 		width: 14px;
 		height: 14px;
 		position: relative;
@@ -354,11 +358,16 @@
 				}
 			}
 			&_open {
-				padding-bottom: 77px !important;
+				//padding-bottom: 77px !important;
 			}
 			&_response {
 				display: none !important;
 			}
+		}
+		&__nav-item-dropdown {
+			position: static;
+			padding-right: 18px;
+			padding-top: 15px;
 		}
 		&__right-part {
 			display: none;

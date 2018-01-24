@@ -81,17 +81,18 @@
 
 								<div class="guest-login__choose-type">
 									<div class="guest-login__choose-type-item-wrap">
-										<a href="#" class="guest-login__choose-type-item guest-login__choose-type-item_active">Publisher</a>
+										<a href="#" class="guest-login__choose-type-item guest-login__choose-type-item_active js-login-type" data-type="publisher">Publisher</a>
 									</div>
 									<div class="guest-login__choose-type-item-wrap">
-										<a href="#" class="guest-login__choose-type-item">Advertiser</a>
+										<a href="#" class="guest-login__choose-type-item js-login-type" data-type="advertiser">Advertiser</a>
 									</div>
+									<input type="hidden" id="login-type" value="publisher">
 								</div>
 								<div class="guest-form__line guest-form__line_checkbox">
-									<div class="guest-form__checkbox-holder">
+									<label class="guest-form__checkbox-holder">
 										<input type="checkbox" class="checkbox-styled js-checkbox">
-										<div class="guest-form__checkbox-text">Remember me</div>
-									</div>
+										<span class="guest-form__checkbox-text">Remember me</span>
+									</label>
 								</div>
 							</div>
 

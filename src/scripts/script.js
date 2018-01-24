@@ -11,4 +11,5 @@ $(document).ready(function() {
 	//= parts/08.export.js
 	//= parts/09.up-arrow.js
 	//= parts/10.desktop-dropdowns.js
+	//= parts/11.choose-login-type.js
 });

@@ -39,8 +39,12 @@
 				<a href="#" class="header__nav-item">Export</a>
 				<a href="#" class="header__nav-item">Messages</a>
 				<a href="#" class="header__nav-item">Publishers</a>
+
+				{#DESKTOP ORDERS#}
 				<div class="header__nav-item header__nav-item_response js-header-item-dropdown">
-					Orders
+					<div class="header__nav-item-toggle js-header-item-toggle">
+						Orders
+					</div>
 					{#DROPDOWN#}
 					<div class="desktop-dropdown js-desktop-dropdown">
 						<div class="desktop-dropdown__link-wrap">
@@ -52,6 +56,9 @@
 					</div>
 					{#/DROPDOWN#}
 				</div>
+				{#/DESKTOP ORDERS#}
+
+				{#MOBILE ORDERS#}
 				<div class="header__nav-item header__nav-item_dropdown js-header-nav-item-trigger">
 					<a href="#" class="header__nav-item-text">Orders</a>
 					<i class="header__nav-item-icon"></i>
@@ -60,6 +67,8 @@
 						<a href="#" class="header__nav-item-dropdown-link">New Order</a>
 					</div>
 				</div>
+				{#/MOBILE ORDERS#}
+
 				<a href="#" class="header__add-new header__add-new_response">
 					<i class="header__add-new-icon"></i>
 					<span class="header__add-new-text">New Ad</span>
@@ -76,8 +85,10 @@
 				<span class="header__add-new-text">New Ad</span>
 			</a>
 			<div class="header__login js-header-item-dropdown">
-				<i class="header__login-icon"></i>
-				<span class="header__login-text">Kalista</span>
+				<div class="header__login-toggle js-header-item-toggle">
+					<i class="header__login-icon"></i>
+					<span class="header__login-text">Kalista</span>
+				</div>
 				{#DROPDOWN#}
 				<div class="desktop-dropdown js-desktop-dropdown">
 					<div class="desktop-dropdown__link-wrap">

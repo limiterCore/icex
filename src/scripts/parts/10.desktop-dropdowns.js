@@ -3,22 +3,33 @@
  */
 
 (function($) {
-	var $link = $('.js-header-item-dropdown'),
-		$page = $('.js-page'),
+	var $link = $('.js-header-item-toggle'),
 		ww = $(window).width();
 
 	if (ww > 1100) {
 		$link.click(function() {
 			var $t = $(this),
-				$dropdown = $t.find('.js-desktop-dropdown');
+				$dropdown = $t.closest('.js-header-item-dropdown').find('.js-desktop-dropdown');
 
-			console.log("!");
+			$dropdown.toggle();
 
-			$dropdown.fadeToggle(300);
+			if ($dropdown.is(':visible')) {
+				// Hide on click on page
+				$('body').on('click.drop', function(e) {
+					var $target = $(e.target);
 
-			$page.click(function() {
-				$dropdown.fadeOut(300);
-			});
+					// If click is not inside search form
+					if (!$target.hasClass('.js-desktop-dropdown') && $target.closest('.js-desktop-dropdown').length < 1) {
+						$dropdown.hide();
+						$('body').off('click.drop');
+					}
+				});
+			}
+			else {
+				$('body').off('click.drop');
+			}
+
+			return false;
 		});
 	}
 })(jQuery);

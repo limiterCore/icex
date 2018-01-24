@@ -8,6 +8,7 @@
 	display: none;
 	z-index: 100;
 	border: 1px solid black;
+	cursor: default;
 
 	&__link-wrap {
 		margin-bottom: 20px;
@@ -21,6 +22,7 @@
 		font-size: @14;
 		.regular();
 		transition: all .3s ease;
+		white-space: nowrap;
 
 		.no-touchevents & {
 			&:hover {

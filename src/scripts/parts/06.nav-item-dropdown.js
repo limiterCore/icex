@@ -1,6 +1,3 @@
-/**
- * ICheck - in subscribe block
- */
 (function($) {
 	var $link = $('.js-header-nav-item-trigger');
 
