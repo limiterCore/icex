@@ -24,15 +24,22 @@
 					<a href="/" class="header__nav-logo"></a>
 				</div>
 
+				<div class="header__nav-item header__nav-item_dropdown js-header-nav-item-parent">
+					{#MOBILE DROPDOWN TRIGGER#}
+					<div class="header__nav-item-container js-header-nav-item-trigger">
+						<a href="#" class="header__nav-item-text header__nav-item-text_login">Kalista</a>
+						<i class="header__nav-item-icon"></i>
+					</div>
+					{#/MOBILE DROPDOWN TRIGGER#}
 
-				<div class="header__nav-item header__nav-item_login header__nav-item_dropdown js-header-nav-item-trigger">
-					<a href="#" class="header__nav-item-text">Kalista</a>
-					<i class="header__nav-item-icon"></i>
+					{#MOBILE DROPDOWN#}
 					<div class="header__nav-item-dropdown js-header-nav-item-dropdown">
 						<a href="#" class="header__nav-item-dropdown-link">Edit Account</a>
 						<a href="#" class="header__nav-item-dropdown-link">Log Off</a>
 					</div>
+					{#/MOBILE DROPDOWN#}
 				</div>
+
 				<a href="#" class="header__nav-item">Home</a>
 				<a href="#" class="header__nav-item">Places</a>
 				<a href="#" class="header__nav-item">New Place</a>
