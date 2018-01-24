@@ -142,7 +142,7 @@ gulp.task('js', function () {
 			});
 			return false;
 		})
-		// .pipe(uglify({comments: false}))
+		.pipe(uglify({comments: false}))
 		.on('error', function(err) {
 			notifier.notify({
 				'title': "Error",
