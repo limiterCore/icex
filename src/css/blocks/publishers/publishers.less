@@ -227,3 +227,23 @@
 		}
 	}
 }
+
+@media screen and (max-width: 500px) {
+	.publishers {
+		overflow: hidden;
+
+		&__table-header {
+			min-width: 30%;
+			width: 30%;
+		}
+		&__table-body {
+			min-width: calc(~'70% + 25px');
+			width: calc(~'70% + 25px');
+
+
+			.publishers__table_messages & {
+				padding: 24px;
+			}
+		}
+	}
+}

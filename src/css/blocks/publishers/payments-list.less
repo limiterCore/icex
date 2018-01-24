@@ -1,5 +1,6 @@
 .payments-list  {
-
+	overflow: hidden;
+	
 	&__header {
 		color: white;
 		margin-bottom: 11px;
@@ -44,6 +45,7 @@
 		overflow: hidden;
 		overflow-y: auto;
 		margin-right: -20px;
+		padding-right: 10px;
 	}
 	&__table-row {
 		display: flex;
@@ -167,4 +169,21 @@
 			}
 		}
 	}
+}
+
+@media screen and (max-width: 500px) {
+	.payments-list  {
+		overflow: hidden;
+		width: 110%;
+
+		&__header {
+			min-width: 30%;
+			width: 30%;
+		}
+		&__body {
+			min-width: calc(~'70% + 25px');
+			width: calc(~'70% + 25px');
+		}
+}
+
 }
