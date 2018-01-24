@@ -3,7 +3,6 @@
 	display: flex;
 	flex-direction: column;
 
-
 	&__bg {
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -24,27 +23,33 @@
 		padding-top: 40px;
 		padding-bottom: 40px;
 	}
+
 	&__block {
-		&:first-child {
-			margin-bottom: 55px;
+		margin-bottom: 55px;
+		&:last-child {
+			margin-bottom: 0;
 		}
+
 	}
 	&__title{
 		font-size: @26;
 		text-align: center;
-		color: #ffffff;
+		color: white;
 		.medium();
 		margin-bottom: 40px;
 	}
+
 	&__form {
 	}
+
 	&__table {
 		&_messages {
 			width: calc(~'100% - 173px');
 			margin-left: auto;
+
 		}
 	}
-	&__table-title {
+	&__table-header {
 		display: flex;
 		padding-bottom: 29px;
 	}
@@ -62,17 +67,17 @@
 			width: 38%;
 		}
 	}
-	&__table-block {
+	&__table-body {
 		border: 1px solid white;
 		padding: 22px 0 55px 0;
 		position: relative;
 		overflow: hidden;
 
-		&_messages {
+		.publishers__table_messages & {
 			padding: 24px;
 		}
 	}
-	&__table-block-inner {
+	&__table-body-inner {
 		overflow: auto;
 		max-height: 393px;
 		overflow-x: hidden;
@@ -82,7 +87,7 @@
 		margin-bottom: 42px;
 		display: flex;
 	}
-	&__table-block-no-messages {
+	&__table-body-no-messages {
 		font-size: @16;
 		line-height: 1.13;
 		color: #00c9b3;
@@ -92,7 +97,7 @@
 		.light();
 		font-size: 14px;
 		line-height: 1.29;
-		color: #ffffff;
+		color: white;
 		text-align: center;
 		&_1 {
 			width: 28%;
@@ -116,22 +121,21 @@
 @media screen and (max-width: 768px) {
 	.publishers {
 		padding-top: 43px;
-
-		&__table-block {
-			padding: 7px 6px 12px 6px;
-			&_messages {
-				padding: 13px;
-				width: 100%;
-				text-align: center;
-				background: rgba(255,255,255,0.2);
-			}
-		}
 		&__table {
 			padding-bottom: 0;
 			display: flex;
 			&_messages {
 				width: 100%;
 				margin-left: 0;
+			}
+		}
+		&__table-body {
+			padding: 7px 6px 12px 6px;
+			.publishers__table_messages & {
+				padding: 13px;
+				width: 100%;
+				text-align: center;
+				background: rgba(255,255,255,0.2);
 			}
 		}
 	}
@@ -151,7 +155,7 @@
 			padding-top: 20px;
 			padding-bottom: 20px;
 		}
-		&__table-title {
+		&__table-header {
 			flex-direction: column;
 			justify-content: space-around;
 			padding-bottom: 0;
@@ -176,7 +180,7 @@
 				height: 54px;
 			}
 		}
-		&__table-block-inner {
+		&__table-body-inner {
 			overflow: auto;
 			overflow-y: hidden;
 			display: flex;

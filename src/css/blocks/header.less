@@ -160,14 +160,17 @@
 	}
 
 	&__login {
-		display: flex;
-		align-items: center;
-		justify-content: flex-end;
 		text-decoration: none;
 		position: relative;
 		cursor: pointer;
 	}
+	&__login-toggle {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
 	&__login-icon {
+		min-width: 10px;
 		.svg-icon(icon-login, 10px, 14px);
 		margin-right: 11px;
 		transition: all .3s ease;
@@ -233,8 +236,7 @@
 				background: black;
 			}
 			&:nth-child(2) {
-				opacity: 1;
-				visibility: hidden;
+				display: none;
 			}
 			&:last-child {
 				transform: rotate(45deg);
@@ -268,6 +270,7 @@
 	}
 	&__add-new-icon {
 		margin-right: 10px;
+		min-width: 14px;
 		width: 14px;
 		height: 14px;
 		position: relative;
@@ -355,13 +358,6 @@
 					margin-right: 0;
 				}
 			}
-			//&_dropdown {
-			//	.header_grey & {
-			//		display: flex !important;
-			//		justify-content: space-between;
-			//		align-items: center;
-			//	}
-			//}
 			&_response {
 				display: none !important;
 			}

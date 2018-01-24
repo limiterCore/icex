@@ -47,8 +47,12 @@
 				<a href="#" class="header__nav-item">Export</a>
 				<a href="#" class="header__nav-item">Messages</a>
 				<a href="#" class="header__nav-item">Publishers</a>
+
+				{#DESKTOP ORDERS#}
 				<div class="header__nav-item header__nav-item_response js-header-item-dropdown">
-					Orders
+					<div class="header__nav-item-toggle js-header-item-toggle">
+						Orders
+					</div>
 					{#DROPDOWN#}
 					<div class="desktop-dropdown js-desktop-dropdown">
 						<div class="desktop-dropdown__link-wrap">
@@ -60,6 +64,7 @@
 					</div>
 					{#/DROPDOWN#}
 				</div>
+<<<<<<< HEAD
 				<div class="header__nav-item header__nav-item_dropdown js-header-nav-item-parent">
 					{#MOBILE DROPDOWN TRIGGER#}
 					<div class="header__nav-item-container js-header-nav-item-trigger">
@@ -69,14 +74,27 @@
 					{#/MOBILE DROPDOWN TRIGGER#}
 
 					{#MOBILE DROPDOWN#}
+=======
+				{#/DESKTOP ORDERS#}
+
+				{#MOBILE ORDERS#}
+				<div class="header__nav-item header__nav-item_dropdown js-header-nav-item-trigger">
+					<a href="#" class="header__nav-item-text">Orders</a>
+					<i class="header__nav-item-icon"></i>
+>>>>>>> d09937ac9383db8698fe9c0e8106c91255984de6
 					<div class="header__nav-item-dropdown js-header-nav-item-dropdown">
 						<a href="#" class="header__nav-item-dropdown-link">Existing Orders</a>
 						<a href="#" class="header__nav-item-dropdown-link">New Order</a>
 					</div>
 					{#/MOBILE DROPDOWN#}
 				</div>
+<<<<<<< HEAD
 
 				{#NEW AD LINK#}
+=======
+				{#/MOBILE ORDERS#}
+
+>>>>>>> d09937ac9383db8698fe9c0e8106c91255984de6
 				<a href="#" class="header__add-new header__add-new_response">
 					<i class="header__add-new-icon"></i>
 					<span class="header__add-new-text">New Ad</span>
@@ -94,8 +112,10 @@
 				<span class="header__add-new-text">New Ad</span>
 			</a>
 			<div class="header__login js-header-item-dropdown">
-				<i class="header__login-icon"></i>
-				<span class="header__login-text">Kalista</span>
+				<div class="header__login-toggle js-header-item-toggle">
+					<i class="header__login-icon"></i>
+					<span class="header__login-text">Kalista</span>
+				</div>
 				{#DROPDOWN#}
 				<div class="desktop-dropdown js-desktop-dropdown">
 					<div class="desktop-dropdown__link-wrap">
