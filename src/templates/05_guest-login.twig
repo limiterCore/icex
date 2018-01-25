@@ -61,23 +61,24 @@
 				<div class="guest-form">
 					<form>
 						<div class="guest-form__wrap">
+
 							{#INPUTS#}
-							<label class="guest-form__line">
+							<div class="guest-form__line">
 								<div class="guest-form__line-title-wrap">
-									<p class="guest-form__line-title">Username</p>
+									<label for="g-log-user" class="guest-form__line-title">Username</label>
 								</div>
 								<div class="guest-form__input-holder">
-									<input type="text" class="guest-form__input" placeholder="Username">
+									<input id="g-log-user" type="text" class="guest-form__input" placeholder="Username">
 								</div>
-							</label>
-							<label class="guest-form__line">
+							</div>
+							<div class="guest-form__line">
 								<div class="guest-form__line-title-wrap">
-									<p class="guest-form__line-title">Password</p>
+									<label for="g-log-pass" class="guest-form__line-title">Password</label>
 								</div>
 								<div class="guest-form__input-holder">
-									<input type="text" class="guest-form__input" placeholder="Password">
+									<input id="g-log-pass" type="text" class="guest-form__input" placeholder="Password">
 								</div>
-							</label>
+							</div>
 							{#/INPUTS#}
 
 							{#CHOOSE TYPE#}
