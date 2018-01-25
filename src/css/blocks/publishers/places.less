@@ -89,7 +89,13 @@
 		font-size: @16;
 		line-height: 1.13;
 		text-decoration: none;
-		display: block;
+		.regular();
+		transition: all .3s ease;
+		.no-touchevents & {
+			&:hover {
+				filter: drop-shadow(0 0 4px @turquoise-color);
+			}
+		}
 	}
 }
 
