@@ -73,46 +73,54 @@
 				<div class="guest-form">
 					<form>
 						<div class="guest-form__wrap">
-							<div class="guest-form__top-part">
-								<div class="guest-form__line">
-									<div class="guest-form__line-title-wrap">
-										<p class="guest-form__line-title">Username</p>
-									</div>
-									<div class="guest-form__input-holder">
-										<input type="text" class="guest-form__input" placeholder="Username">
-									</div>
-								</div>
-								<div class="guest-form__line">
-									<div class="guest-form__line-title-wrap">
-										<p class="guest-form__line-title">Password</p>
-									</div>
-									<div class="guest-form__input-holder">
-										<input type="text" class="guest-form__input" placeholder="Password">
-									</div>
-								</div>
 
-								<div class="guest-login__choose-type">
-									<div class="guest-login__choose-type-item-wrap">
-										<a href="#" class="guest-login__choose-type-item guest-login__choose-type-item_active js-login-type" data-type="publisher">Publisher</a>
-									</div>
-									<div class="guest-login__choose-type-item-wrap">
-										<a href="#" class="guest-login__choose-type-item js-login-type" data-type="advertiser">Advertiser</a>
-									</div>
-									<input type="hidden" id="login-type" value="publisher">
+							
+							<div class="guest-form__line">
+								<div class="guest-form__line-title-wrap">
+									<label for="g-log-user" class="guest-form__line-title">Username</label>
 								</div>
-								<div class="guest-form__line guest-form__line_checkbox">
-									<label class="guest-form__checkbox-holder">
-										<input type="checkbox" class="checkbox-styled js-checkbox">
-										<span class="guest-form__checkbox-text">Remember me</span>
-									</label>
+								<div class="guest-form__input-holder">
+									<input id="g-log-user" type="text" class="guest-form__input" placeholder="Username">
 								</div>
 							</div>
+							<div class="guest-form__line">
+								<div class="guest-form__line-title-wrap">
+									<label for="g-log-pass" class="guest-form__line-title">Password</label>
+								</div>
+								<div class="guest-form__input-holder">
+									<input id="g-log-pass" type="text" class="guest-form__input" placeholder="Password">
+								</div>
+							</div>
+							
 
+							
+							<div class="guest-login__choose-type">
+								<div class="guest-login__choose-type-item-wrap">
+									<a href="#" class="guest-login__choose-type-item guest-login__choose-type-item_active js-login-type" data-type="publisher">Publisher</a>
+								</div>
+								<div class="guest-login__choose-type-item-wrap">
+									<a href="#" class="guest-login__choose-type-item js-login-type" data-type="advertiser">Advertiser</a>
+								</div>
+								<input type="hidden" id="login-type" value="publisher">
+							</div>
+							
+
+							
+							<div class="guest-form__line guest-form__line_checkbox">
+								<label class="guest-form__checkbox-holder">
+									<input type="checkbox" class="checkbox-styled js-checkbox">
+									<span class="guest-form__checkbox-text">Remember me</span>
+								</label>
+							</div>
+							
+
+							
 							<div class="guest-form__line guest-form__line_submit">
 								<div class="guest-form__submit-holder">
 									<button class="guest-form__submit" type="submit">submit</button>
 								</div>
 							</div>
+							
 						</div>
 					</form>
 				</div>
@@ -150,10 +158,10 @@
 	
 </div>
 
-<link rel="stylesheet" href="css/main.css?1516859097">
+<link rel="stylesheet" href="css/main.css?1516859167">
 
 
-<script src="scripts/app.min.js?1516859097"></script>
+<script src="scripts/app.min.js?1516859167"></script>
 
 
 </body>
