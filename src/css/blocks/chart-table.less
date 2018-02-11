@@ -1,0 +1,72 @@
+.chart-table {
+	margin-left: 80px;
+	margin-right: 40px;
+	margin-bottom: -10px;
+	&__header {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__header-col {
+		.regular();
+		font-size: 14px;
+		line-height: 1.29;
+		text-align: center;
+		color: rgba(255, 255, 255, .5);
+		padding-bottom: 15px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	&__body {
+		border: 1px solid rgba(255, 255, 255, .7);
+		border-bottom: none;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__body-col {
+		padding: 16px 0;
+		.regular();
+		font-size: 14px;
+		line-height: 1.29;
+		text-align: center;
+		color: white;
+	}
+	&__col {
+		text-align: center;
+		flex-grow: 20;
+		width: calc(~"100% / 6");
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.chart-table {
+		//margin-left: 0;
+		//margin-right: 0;
+		margin-bottom: -10px;
+		display: flex;
+		border: 1px solid rgba(255, 255, 255, .7);
+		border-bottom: none;
+		//width: 100%;
+		&__header {
+			display: block;
+			width: 70%;
+		}
+		&__header-col {
+			.regular();
+			text-align: left;
+			padding: 0;
+		}
+		&__body {
+			display: block;
+			width: 30%;
+			border: none;
+		}
+		&__body-col {
+			text-align: left;
+		}
+		&__col {
+			height: 50px;
+			padding: 10px;
+			width: 100%;
+		}
+	}
+}
