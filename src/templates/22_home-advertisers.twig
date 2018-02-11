@@ -11,6 +11,28 @@
 		<div class="std-adv__container container">
 			<h1 class="std-adv__title">Welcome back !</h1>
 			<div class="std-adv__content">
+
+				{#CHART TABLE#}
+				<div class="chart-table">
+					<div class="chart-table__header">
+						<div class="chart-table__header-col chart-table__col">Number of places</div>
+						<div class="chart-table__header-col chart-table__col">Impressions sent total</div>
+						<div class="chart-table__header-col chart-table__col">Clicks sent total</div>
+						<div class="chart-table__header-col chart-table__col">Ratio clicks / impressions sent</div>
+						<div class="chart-table__header-col chart-table__col">Amount paid</div>
+						<div class="chart-table__header-col chart-table__col">Amount unpaid</div>
+					</div>
+					<div class="chart-table__body">
+						<div class="chart-table__body-col chart-table__col">0</div>
+						<div class="chart-table__body-col chart-table__col">0</div>
+						<div class="chart-table__body-col chart-table__col">0</div>
+						<div class="chart-table__body-col chart-table__col">nan%</div>
+						<div class="chart-table__body-col chart-table__col">$0.00</div>
+						<div class="chart-table__body-col chart-table__col">$0.00</div>
+					</div>
+				</div>
+				{#/CHART TABLE#}
+
 				{#CHART#}
 				<div class="chart">
 					<div class="chart__itself chart-container" id="home-adv-chart"></div>
@@ -35,21 +57,48 @@
 			google.charts.load('current', {'packages':['corechart']});
 			google.charts.setOnLoadCallback(drawChart);
 
+			var createSVG  = function(n,a,b){
+				var xmlns = "http://www.w3.org/2000/svg",
+					e     = document.createElementNS (xmlns, n);
+				for(var k in a){
+					e.setAttributeNS (null, k,a[k]);
+				}
+				for(var k in b){
+					e.setAttribute (k,b[k]);
+				}
+				return e;
+			};
+
 			function drawChart() {
-				var data = google.visualization.arrayToDataTable([
-					[
-						{label: 'Year', id: 'year'},
-						{label: 'Sales', id: 'Sales', type: 'number'}, // Use object notation to explicitly specify the data type.
-					],
-					['2013', 2000],
-					['2014', 400],
-					['2015', 1000],
-					['2016', 2000],
-					['2016', 500],
-					['2016', 300],
-					['2016', 1200],
-					['2016', 1568],
-				]);
+				// var data = google.visualization.arrayToDataTable([
+				// 	[
+				// 		{label: 'Year', id: 'year'},
+				// 		{label: 'Sales', id: 'Sales', type: 'number'}, // Use object notation to explicitly specify the data type.
+				// 	],
+				// 	['2013', 2000],
+				// 	['2014', 400],
+				// 	['2015', 1000],
+				// 	['2016', 2000],
+				// 	['2016', 500],
+				// 	['2016', 300],
+				// 	['2016', 1200],
+				// 	['2016', 1568],
+				// ]);
+
+
+
+				// var data = google.visualization.arrayToDataTable([
+				// 	[
+				// 		{label: 'Year', id: 'year', type: 'year'},
+				// 		{label: 'Sales', id: 'Sales', type: 'number'}, // Use object notation to explicitly specify the data type.
+				// 	],
+				// 	[2013, 21],
+				// 	[2014, 18],
+				// 	[2015, 27],
+				// 	[2016, 35],
+				// 	[2017, 23],
+				// 	[2018, 20]
+				// ]);
 
 				var options = {
 					legend: {
@@ -57,62 +106,47 @@
 					},
 
 					hAxis: {
-						title: '',
-						titleTextStyle: {
-							color: '#ffffff'
-						},
+						// type: 'category',
+						color: 'none',
+						baselineColor: 'none',
 						textStyle: {
 							color: '#fff',
 						},
 						gridlines: {
-							color: '#ffffff',
-							count: -1,
+							color: 'rgba(255, 255, 255, 0.5)',
 						},
 					},
 					vAxis: {
 						minValue: 0,
 						gridlines: {
-							color: '#ffffff',
-							count: -1,
+							color: 'rgba(255, 255, 255, 0.5)',
 						},
 						textStyle: {
 							color: '#fff',
 						}
 					},
+
 					backgroundColor: { fill:'transparent' },
 					colors: ['#fff'],
 					chartArea: {
 						// 'width': '90%',
-						'height': '80%',
+						height: '80%',
 						top: 10,
 						bottom: 40,
 						left: 80,
 						right: 80,
-					},
-//					animation:{
-//						duration: 1000,
-//						easing: 'out',
-//					},
+					}
 				};
-				// Instantiate and draw our chart, passing in some options.
-				var chart = new google.visualization.AreaChart(document.getElementById('home-adv-chart'));
 
-				var createSVG  = function(n,a,b){
-					var xmlns = "http://www.w3.org/2000/svg",
-						e     = document.createElementNS (xmlns, n);
-					for(var k in a){
-						e.setAttributeNS (null, k,a[k]);
-					}
-					for(var k in b){
-						e.setAttribute (k,b[k]);
-					}
-					return e;
-				};
+				if (!window.chart) {
+					// Instantiate and draw our chart, passing in some options.
+					window.chart = new google.visualization.AreaChart(document.getElementById('home-adv-chart'));
+				}
 
 				google.visualization.events.addListener(chart, 'ready', function(){
 
 					var gradient = createSVG('linearGradient',{
-							x1:0,y1:0,x2:0,y2:1
+							x1:0, y1:0, x2:0, y2:1
 						},{
 							id:'fx'
 						}
@@ -123,29 +157,52 @@
 					gradient.appendChild(createSVG('stop',{offset:'100%'}));
 				});
 
-				chart.draw(data, options);
-
-				function tabClick() {
-					var $link = $('.js-chart-tab');
-
-					$link.click(function() {
-						var $t = $(this);
-
-						$link.removeClass('chart__tabs-item_active');
-						$t.addClass('chart__tabs-item_active');
-
-						// Your logics go here
-
-						data.setValue(0, 1, 1200);
-						chart.draw(data, options);
-
-						return false;
-					});
+				if (!window.chart.currentData) {
+					window.chart.currentData = new google.visualization.DataTable();
+					console.log(window.chart.currentData);
+					window.chart.currentData.addColumn('date', 'Year');
+					window.chart.currentData.addColumn('number', 'Sales');
+					window.chart.currentData.addRows([
+						[new Date(2013, 0), 21],
+						[new Date(2014, 0), 18],
+						[new Date(2015, 0), 27],
+						[new Date(2016, 0), 35],
+						[new Date(2017, 0), 23],
+						[new Date(2018, 0), 20]
+					]);
 				}
 
-				tabClick();
+				window.chart.draw(window.chart.currentData, options);
+
+				jQuery(document).ready(function($) {
+					var $link = $('.js-chart-tab');
+
+					if (!window.chart.eventInitialized) {
+						$link.click(function() {
+							var $t = $(this);
+
+							$link.removeClass('chart__tabs-item_active');
+							$t.addClass('chart__tabs-item_active');
+
+							// Your logics go here
+
+							window.chart.currentData.setValue(0, 1, 1200);
+							window.chart.draw(window.chart.currentData, options);
+							return false;
+						});
+
+						window.chart.eventInitialized = true;
+					}
+				});
 
 			}
+
+			window.addEventListener('resize', function(){
+				drawChart();
+			});
 		})();
+
+
+
 	</script>
 {% endblock %}
