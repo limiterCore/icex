@@ -12,7 +12,7 @@
 }
 
 .chart {
-
+	position: relative;
 	&__itself {
 		width: 100%;
 		min-height: 400px;
@@ -42,6 +42,35 @@
 		}
 		&_active {
 			color: #00c9b3;
+		}
+	}
+
+	&__aside-wrapper {
+		position: absolute;
+		text-align: center;
+		&:first-child {
+			top: 50%;
+			margin-top: -60px;
+			bottom: 0;
+			left: -40px;
+		}
+		&:last-child {
+			top: 50%;
+			margin-top: -60px;
+			bottom: 0;
+			right: -12px;
+		}
+	}
+
+	&__aside {
+		font-size: 21px;
+		.regular();
+		display: block;
+		transform: rotate(-90deg);
+		text-decoration: none;
+		color: #b5220e;
+		&_active {
+			color: #b3c636;
 		}
 	}
 }
