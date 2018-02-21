@@ -12,4 +12,5 @@ $(document).ready(function() {
 	//= parts/09.up-arrow.js
 	//= parts/10.desktop-dropdowns.js
 	//= parts/11.choose-login-type.js
+	//= parts/12.pop-up.js
 });

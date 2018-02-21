@@ -8,12 +8,48 @@
 {% block content %}
 {#HOME ADVERTISERS#}
 	<div class="std-adv js-page"  style="background-image: url(img/contact-us-bg.jpg)">
+
+		{#POP-UP#}
+		<div class="popup-box {#pop-up#}">
+			<div class="popup-box__wrap">
+				<a href="#" class="popup-box__close">
+					<span class="popup-box__close-line"></span>
+					<span class="popup-box__close-line"></span>
+				</a>
+				<div class="popup-box__block">
+					<p class="popup-box__title">Code for embded</p>
+				</div>
+				<div class="popup-box__block">
+					<p class="popup-box__text">
+						Some text, as described how to do it. Some text, as described how to do it.
+						Some text, as described how to do it. Some text, as described how to do it.
+						Some text, as described how to do it.
+					</p>
+				</div>
+				<form>
+					<div class="popup-box__block">
+						<div class="form__input-container">
+							<div class="form__input-holder">
+								<textarea  cols="30" rows="10" class="form__textarea form__textarea_publishers form__textarea_black"  placeholder="Code"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="popup-box__button">
+						<button class="btn btn_block">ok</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		{#/POP-UP#}
+
 		<div class="std-adv__container container">
+
 			<h1 class="std-adv__title">Your Campaigns</h1>
 			<div class="std-adv__content">
 				{#ADV TABLE#}
 				<div class="adv-table adv-table_ads-adv">
 					<div class="adv-table__wrap">
+
 						{#ADV TABLE HEAD#}
 						<div class="adv-table__head">
 							<div class="adv-table__column">
@@ -67,6 +103,10 @@
 									<div class="adv-table__column">
 										<i class="adv-table__icon adv-table__icon_graphic"></i>
 										<i class="adv-table__icon adv-table__icon_edit"></i>
+										<i class="adv-table__icon adv-table__icon_edit"></i>
+										<a href="#" class="adv-table__pop-up-link popup-link" {#data-name="pop-up"#}>
+											<i class="adv-table__icon adv-table__icon_edit"></i>
+										</a>
 									</div>
 								</div>
 								{#/ROW#}

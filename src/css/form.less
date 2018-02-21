@@ -78,7 +78,6 @@
 		.regular();
 		font-size: @14;
 		-webkit-appearance: none;
-
 		&_publishers {
 			height: 181px;
 		}
@@ -103,6 +102,27 @@
 		}
 		&_error {
 			border-color: #ff0000;
+		}
+		&_black {
+			color: #242830;
+			border-color: #242830;
+			height: 150px;
+			&::-webkit-input-placeholder {
+				color: #242830;
+				opacity: 1;
+			}
+			&::-moz-placeholder {
+				color: #242830;
+				opacity: 1;
+			}
+			&:-moz-placeholder {
+				color: #242830;
+				opacity: 1;
+			}
+			&:-ms-input-placeholder {
+				color: #242830;
+				opacity: 1;
+			}
 		}
 	}
 
@@ -267,6 +287,9 @@
 				width: 45%;
 				margin-right: 30px;
 			}
+		}
+		&__textarea {
+			height: 100px;
 		}
 	}
 }
