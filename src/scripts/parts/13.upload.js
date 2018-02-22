@@ -17,12 +17,11 @@
 		var file = evt.target.files[0],
 			$parent = $t.closest('.js-drop'),
 			$after = $parent.find('.js-upload-after'),
-			$before = $parent.find('.js-upload-defore');
+			$before = $parent.find('.js-upload-before');
 
 		$before.hide();
-		$after.show();
+		$after.show().text(file.name);
 
-		$value.text(file.name);
 	}
 
 	$('body').on('change', '.js-upload-input', function(e) {

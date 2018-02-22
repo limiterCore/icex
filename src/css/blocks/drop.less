@@ -5,6 +5,7 @@
 	text-align: center;
 
 	&__content {
+		min-height: 254px;
 		padding-top: 75px;
 		padding-bottom: 70px;
 		text-align: center;
@@ -26,10 +27,11 @@
 		font-size: @14;
 	}
 	&__content-after {
-		width: 0;
-		height: 0;
-		opacity: 0;
-		visibility: hidden;
+		color: white;
+		.regular();
+		font-size: @24;
+		display: none;
+		padding-top: 50px;
 	}
 }
 
@@ -39,6 +41,9 @@
 		&__content {
 			padding-top: 45px;
 			padding-bottom: 35px;
+		}
+		&__content-after {
+			padding-top: 80px;
 		}
 	}
 }
@@ -53,11 +58,19 @@
 	.drop {
 
 		&__content {
+			min-height: 175px;
 			padding-top: 25px;
 			padding-bottom: 20px;
 		}
 		&__icon {
 			margin-bottom: 20px;
+		}
+		&__content-after {
+			color: white;
+			.regular();
+			font-size: @16;
+			display: none;
+			padding-top: 55px;
 		}
 	}
 }
