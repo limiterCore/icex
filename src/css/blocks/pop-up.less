@@ -1,13 +1,11 @@
 .popup-box {
-	position: absolute;
-	background: #F3F5F8;
 	display: none;
-	box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
-	z-index: 9999;
-	width: 30%;
-	left: 35%;
-	top: 250px;
 	&__wrap {
+		position: relative;
+		width: 50%;
+		left: 25%;
+		background: #F3F5F8;
+		box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.8);
 		padding: 35px 35px;
 	}
 	&__close {
@@ -53,64 +51,22 @@
 	}
 }
 
-#overlay {
-	width:100%;
-	height:100%;
-	position:fixed;
-	top:0;
-	left:0;
-	display:none;
-	background:#000;
-	opacity:.4;
-	z-index:100;
-}
-
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1300px) {
 	.popup-box {
-		width: 40%;
-		left: 30%;
-	}
-}
-
-@media screen and (max-width: 1600px) {
-	.popup-box {
-		width: 50%;
-		left: 25%;
-		top: 260px;
 
 		&__wrap {
-			padding: 30px 30px;
-		}
-		&__block {
-			margin-bottom: 20px;
-		}
-	}
-}
-
-@media screen and (max-width: 1200px) {
-	.popup-box {
-		width: 60%;
-		left: 20%;
-		&__text {
-			line-height: 1.3;
-			color: #8c9398;
-			font-size: @14;
-			width: 80%;
-		}
-		&__wrap {
+			width: 60%;
+			left: 20%;
 			padding: 20px;
 			padding-top: 30px;
+		}
+		&__text {
+			line-height: 1.3;
 		}
 		&__block {
 			margin-bottom: 15px;
 		}
 		&__close {
-			position: absolute;
-			text-decoration: none;
-			display: block;
-			top: 10px;
-			right: 10px;
-			cursor: pointer;
 			width: 20px;
 			height: 20px;
 		}
@@ -122,28 +78,31 @@
 
 @media screen and (max-width: 768px) {
 	.popup-box {
-		width: 70%;
-		left: 15%;
-		top: 400px;
+
+		&__wrap {
+			width: 70%;
+			left: 15%;
+		}
 		&__title {
-			.regular();
-			color: #242830;
 			font-size: @14;
 		}
 		&__text {
 			line-height: 1;
-			color: #8c9398;
 			font-size: @12;
 			width: 90%;
 		}
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
 	.popup-box {
-		width: 90%;
-		left: 5%;
-		top: 400px;
+
+		&__wrap {
+			width: 90%;
+			left: 5%;
+			padding: 15px;
+			padding-top: 20px;
+		}
 	}
 }
 
