@@ -8,12 +8,40 @@
 {% block content %}
 {#HOME ADVERTISERS#}
 	<div class="std-adv js-page"  style="background-image: url(img/contact-us-bg.jpg)">
+
+		{#POP-UP#}
+		<div class="popup-box">
+			<div class="popup-box__wrap box-modal" id="exampleModal">
+				<a href="#" class="popup-box__close box-modal_close arcticmodal-close">
+					<span class="popup-box__close-line"></span>
+					<span class="popup-box__close-line"></span>
+				</a>
+				<h3 class="popup-box__title">Code for embded</h3>
+				<p class="popup-box__text">
+					Some text, as described how to do it. Some text, as described how to do it.
+					Some text, as described how to do it. Some text, as described how to do it.
+					Some text, as described how to do it.
+				</p>
+				<div class="form__input-container form__input-container_pop-up-block">
+					<div class="form__input-holder">
+						<textarea  cols="30" rows="10" class="form__textarea form__textarea_black"  placeholder="Code"></textarea>
+					</div>
+				</div>
+				<div class="popup-box__button">
+					<button class="btn btn_block" id="close-pop-up">ok</button>
+				</div>
+			</div>
+		</div>
+		{#/POP-UP#}
+
 		<div class="std-adv__container container">
+
 			<h1 class="std-adv__title">Your Campaigns</h1>
 			<div class="std-adv__content">
 				{#ADV TABLE#}
 				<div class="adv-table adv-table_ads-adv">
 					<div class="adv-table__wrap">
+
 						{#ADV TABLE HEAD#}
 						<div class="adv-table__head">
 							<div class="adv-table__column">
@@ -65,8 +93,18 @@
 										<p class="adv-table__text">0</p>
 									</div>
 									<div class="adv-table__column">
-										<i class="adv-table__icon adv-table__icon_graphic"></i>
-										<i class="adv-table__icon adv-table__icon_edit"></i>
+										<a href="#" class="adv-table__icon-link-wrap">
+											<i class="adv-table__icon adv-table__icon_graphic"></i>
+										</a>
+										<a href="#" class="adv-table__icon-link-wrap">
+											<i class="adv-table__icon adv-table__icon_edit"></i>
+										</a>
+										<a href="#" class="adv-table__icon-link-wrap">
+											<i class="adv-table__icon adv-table__icon_delete"></i>
+										</a>
+										<a href="#" class="adv-table__icon-link-wrap popup-link">
+											<i class="adv-table__icon adv-table__icon_tag"></i>
+										</a>
 									</div>
 								</div>
 								{#/ROW#}
@@ -93,8 +131,18 @@
 										<p class="adv-table__text">0</p>
 									</div>
 									<div class="adv-table__column">
-										<i class="adv-table__icon adv-table__icon_graphic"></i>
-										<i class="adv-table__icon adv-table__icon_edit"></i>
+										<a href="#" class="adv-table__icon-link-wrap">
+											<i class="adv-table__icon adv-table__icon_graphic"></i>
+										</a>
+										<a href="#" class="adv-table__icon-link-wrap">
+											<i class="adv-table__icon adv-table__icon_edit"></i>
+										</a>
+										<a href="#" class="adv-table__icon-link-wrap">
+											<i class="adv-table__icon adv-table__icon_delete"></i>
+										</a>
+										<a href="#" class="adv-table__icon-link-wrap popup-link">
+											<i class="adv-table__icon adv-table__icon_tag"></i>
+										</a>
 									</div>
 								</div>
 								{#/ROW#}
@@ -121,8 +169,18 @@
 										<p class="adv-table__text">0</p>
 									</div>
 									<div class="adv-table__column">
-										<i class="adv-table__icon adv-table__icon_graphic"></i>
-										<i class="adv-table__icon adv-table__icon_edit"></i>
+										<a href="#" class="adv-table__icon-link-wrap">
+											<i class="adv-table__icon adv-table__icon_graphic"></i>
+										</a>
+										<a href="#" class="adv-table__icon-link-wrap">
+											<i class="adv-table__icon adv-table__icon_edit"></i>
+										</a>
+										<a href="#" class="adv-table__icon-link-wrap">
+											<i class="adv-table__icon adv-table__icon_delete"></i>
+										</a>
+										<a href="#" class="adv-table__icon-link-wrap popup-link">
+											<i class="adv-table__icon adv-table__icon_tag"></i>
+										</a>
 									</div>
 								</div>
 								{#/ROW#}
@@ -149,8 +207,18 @@
 										<p class="adv-table__text">0</p>
 									</div>
 									<div class="adv-table__column">
-										<i class="adv-table__icon adv-table__icon_graphic"></i>
-										<i class="adv-table__icon adv-table__icon_edit"></i>
+										<a href="#" class="adv-table__icon-link-wrap">
+											<i class="adv-table__icon adv-table__icon_graphic"></i>
+										</a>
+										<a href="#" class="adv-table__icon-link-wrap">
+											<i class="adv-table__icon adv-table__icon_edit"></i>
+										</a>
+										<a href="#" class="adv-table__icon-link-wrap">
+											<i class="adv-table__icon adv-table__icon_delete"></i>
+										</a>
+										<a href="#" class="adv-table__icon-link-wrap popup-link">
+											<i class="adv-table__icon adv-table__icon_tag"></i>
+										</a>
 									</div>
 								</div>
 								{#/ROW#}
@@ -177,8 +245,18 @@
 										<p class="adv-table__text">0</p>
 									</div>
 									<div class="adv-table__column">
-										<i class="adv-table__icon adv-table__icon_graphic"></i>
-										<i class="adv-table__icon adv-table__icon_edit"></i>
+										<a href="#" class="adv-table__icon-link-wrap">
+											<i class="adv-table__icon adv-table__icon_graphic"></i>
+										</a>
+										<a href="#" class="adv-table__icon-link-wrap">
+											<i class="adv-table__icon adv-table__icon_edit"></i>
+										</a>
+										<a href="#" class="adv-table__icon-link-wrap">
+											<i class="adv-table__icon adv-table__icon_delete"></i>
+										</a>
+										<a href="#" class="adv-table__icon-link-wrap popup-link">
+											<i class="adv-table__icon adv-table__icon_tag"></i>
+										</a>
 									</div>
 								</div>
 								{#/ROW#}
@@ -205,8 +283,18 @@
 										<p class="adv-table__text">0</p>
 									</div>
 									<div class="adv-table__column">
-										<i class="adv-table__icon adv-table__icon_graphic"></i>
-										<i class="adv-table__icon adv-table__icon_edit"></i>
+										<a href="#" class="adv-table__icon-link-wrap">
+											<i class="adv-table__icon adv-table__icon_graphic"></i>
+										</a>
+										<a href="#" class="adv-table__icon-link-wrap">
+											<i class="adv-table__icon adv-table__icon_edit"></i>
+										</a>
+										<a href="#" class="adv-table__icon-link-wrap">
+											<i class="adv-table__icon adv-table__icon_delete"></i>
+										</a>
+										<a href="#" class="adv-table__icon-link-wrap popup-link">
+											<i class="adv-table__icon adv-table__icon_tag"></i>
+										</a>
 									</div>
 								</div>
 								{#/ROW#}
@@ -233,8 +321,18 @@
 										<p class="adv-table__text">0</p>
 									</div>
 									<div class="adv-table__column">
-										<i class="adv-table__icon adv-table__icon_graphic"></i>
-										<i class="adv-table__icon adv-table__icon_edit"></i>
+										<a href="#" class="adv-table__icon-link-wrap">
+											<i class="adv-table__icon adv-table__icon_graphic"></i>
+										</a>
+										<a href="#" class="adv-table__icon-link-wrap">
+											<i class="adv-table__icon adv-table__icon_edit"></i>
+										</a>
+										<a href="#" class="adv-table__icon-link-wrap">
+											<i class="adv-table__icon adv-table__icon_delete"></i>
+										</a>
+										<a href="#" class="adv-table__icon-link-wrap popup-link">
+											<i class="adv-table__icon adv-table__icon_tag"></i>
+										</a>
 									</div>
 								</div>
 								{#/ROW#}
@@ -261,8 +359,18 @@
 										<p class="adv-table__text">0</p>
 									</div>
 									<div class="adv-table__column">
-										<i class="adv-table__icon adv-table__icon_graphic"></i>
-										<i class="adv-table__icon adv-table__icon_edit"></i>
+										<a href="#" class="adv-table__icon-link-wrap">
+											<i class="adv-table__icon adv-table__icon_graphic"></i>
+										</a>
+										<a href="#" class="adv-table__icon-link-wrap">
+											<i class="adv-table__icon adv-table__icon_edit"></i>
+										</a>
+										<a href="#" class="adv-table__icon-link-wrap">
+											<i class="adv-table__icon adv-table__icon_delete"></i>
+										</a>
+										<a href="#" class="adv-table__icon-link-wrap popup-link">
+											<i class="adv-table__icon adv-table__icon_tag"></i>
+										</a>
 									</div>
 								</div>
 								{#/ROW#}
@@ -289,8 +397,18 @@
 										<p class="adv-table__text">0</p>
 									</div>
 									<div class="adv-table__column">
-										<i class="adv-table__icon adv-table__icon_graphic"></i>
-										<i class="adv-table__icon adv-table__icon_edit"></i>
+										<a href="#" class="adv-table__icon-link-wrap">
+											<i class="adv-table__icon adv-table__icon_graphic"></i>
+										</a>
+										<a href="#" class="adv-table__icon-link-wrap">
+											<i class="adv-table__icon adv-table__icon_edit"></i>
+										</a>
+										<a href="#" class="adv-table__icon-link-wrap">
+											<i class="adv-table__icon adv-table__icon_delete"></i>
+										</a>
+										<a href="#" class="adv-table__icon-link-wrap popup-link">
+											<i class="adv-table__icon adv-table__icon_tag"></i>
+										</a>
 									</div>
 								</div>
 								{#/ROW#}

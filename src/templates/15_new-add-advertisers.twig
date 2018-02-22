@@ -35,6 +35,27 @@
 								</select>
 							</div>
 						</div>
+
+						{#DROP-ZONE#}
+						<div class="form__input-container">
+							<div class="drop form__drop js-drop">
+								<div class="drop__content js-upload-button">
+									<div class="drop__content-before js-upload-before">
+										<i class="drop__icon"></i>
+										<p class="drop__title">
+											Drop a file here or click to upload
+										</p>
+										<p class="drop__max-size">
+											Maximum upload size: 100MB
+										</p>
+									</div>
+									<div class="drop__content-after js-upload-after"></div>
+								</div>
+								<input type="file" class="form__upload js-upload-input">
+							</div>
+						</div>
+						{#DROP-ZONE#}
+
 						<div class="form__submit-container">
 							<div class="form__submit-holder form__submit-holder_account">
 								<button class="form__submit btn">continue</button>
