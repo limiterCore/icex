@@ -9,6 +9,9 @@
 		.form__select-holder {
 			margin-bottom: 0;
 		}
+		&_pop-up-block {
+			margin-bottom: 25px;
+		}
 	}
 
 	&__input-holder {
@@ -278,6 +281,16 @@
 	&__down-wrap {
 		text-align: center;
 	}
+	&__drop {
+		width: 552px;
+		margin-left: 232px;
+	}
+	&__upload {
+		width: 0;
+		height: 0;
+		opacity: 0;
+		visibility: hidden;
+	}
 }
 
 @media screen and (max-width: 1100px) {
@@ -290,6 +303,14 @@
 		}
 		&__textarea {
 			height: 100px;
+		}
+		&__drop {
+			width: 100%;
+		}
+		&__input-container {
+			&_pop-up-block {
+				margin-bottom: 15px;
+			}
 		}
 	}
 }
@@ -355,6 +376,8 @@
 		&__date {
 			display: none;
 		}
-
+		&__drop {
+			margin: 0;
+		}
 	}
 }

@@ -1,7 +1,5 @@
 .drop {
-	display: block;
-	width: 552px;
-	margin-left: 232px;
+	cursor: pointer;
 	border: 1px solid rgba(255, 255, 255, 0.9);
 	background: rgba(255, 255, 255, 0.2);
 	text-align: center;
@@ -27,6 +25,12 @@
 		.regular();
 		font-size: @14;
 	}
+	&__content-after {
+		width: 0;
+		height: 0;
+		opacity: 0;
+		visibility: hidden;
+	}
 }
 
 @media screen and (max-width: 1440px) {
@@ -47,7 +51,6 @@
 
 @media screen and (max-width: 768px) {
 	.drop {
-		margin: 0;
 
 		&__content {
 			padding-top: 25px;
