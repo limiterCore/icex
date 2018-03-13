@@ -14,4 +14,5 @@ $(document).ready(function() {
 	//= parts/11.choose-login-type.js
 	//= parts/12.pop-up.js
 	//= parts/13.upload.js
+	//= parts/14.form-tab.js
 });

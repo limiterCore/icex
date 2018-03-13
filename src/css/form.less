@@ -84,6 +84,9 @@
 		&_publishers {
 			height: 181px;
 		}
+		&_code {
+			height: 274px;
+		}
 		&::-webkit-input-placeholder {
 			color: rgba(255, 255, 255, 0.5);
 			opacity: 1;
@@ -281,8 +284,40 @@
 	&__down-wrap {
 		text-align: center;
 	}
-	&__drop {
+
+	&__pad-right {
 		margin-left: 232px;
+		width: 100%;
+	}
+
+	&__tab-container {
+		position: relative;
+	}
+	&__tab {
+		&:nth-child(n + 2) {
+			display: none;
+		}
+	}
+	&__tab-links {
+		margin-top: 16px;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 37px;
+	}
+	&__tab-link {
+		font-size: 16px;
+		.regular();
+		color: white;
+		text-decoration: none;
+		margin: 0 23px;
+		&:hover {
+			color: @turquoise-color;
+		}
+		&_active {
+			color: @turquoise-color;
+		}
+	}
+	&__drop {
 		width: 100%;
 	}
 	&__upload {
@@ -376,8 +411,13 @@
 		&__date {
 			display: none;
 		}
-		&__drop {
+		&__pad-right {
 			margin: 0;
+		}
+		&__textarea {
+			&_code {
+				height: 195px;
+			}
 		}
 	}
 }
